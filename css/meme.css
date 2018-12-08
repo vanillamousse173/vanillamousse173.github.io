@@ -27,7 +27,7 @@ body{
 section{
 	position: relative;
 	width: 80%;
-	margin: 120px auto;
+	margin: 0 auto 120px;
 }
 
 .title{
