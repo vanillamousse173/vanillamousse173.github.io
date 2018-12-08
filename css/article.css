@@ -1,0 +1,174 @@
+@charset "utf-8";
+/*CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900');
+
+body{
+	display: flex; /*為了使footer置底*/
+	flex-direction: column; /*由上至下排列*/
+	min-height:100vh;
+	/*可大於但不可小於 整個瀏覽器可視範圍*/
+	position: relative;
+	margin:0;
+	background:#ffc349;
+	font-family: 'Noto Sans TC';
+}
+
+::-moz-selection{
+	color: #fff;
+	background: #fe5656;
+}
+
+::selection{
+	color: #fff;
+	background: #fe5656;
+}
+
+section{
+	position: relative;
+	width: 100%;
+}
+
+.content{
+	position: relative;
+	width: 100%;
+}
+
+article{
+	width: 60%;
+	margin: 120px auto;
+	scroll-behavior: smooth;
+}
+
+.title{
+	width: 500px;
+	margin: auto;
+}
+
+.title img{
+	width: 100%;
+}
+
+p{
+	font-size: 14pt;
+	padding: 14pt 10px ;
+	margin: 0;
+	line-height: 22pt;
+	letter-spacing: 2px;
+	text-align: justify;
+}
+
+h3{
+	font-size: 16pt;
+	color: #fff;
+	display: inline-block;
+	background-color: #fe5656;
+	margin: 50px 0 0 10px ;
+	padding:5px 10px ;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.tag{
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.tag a{
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	font-size: 12pt;
+	margin-right: 5px;
+	padding: 2px 5px;
+	border-radius: 5px;
+}
+
+.tag a:hover{
+	line-height: 16pt;
+	color: #fff;
+	background-color: #fe5656; 
+}
+
+.tooltip {
+    position: relative;
+    border-bottom: dotted 2px #fe5656;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #fe5656;
+    width: 200px;
+    color: #fff;
+    text-align: left;
+    font-size: 12pt;
+    line-height: 18pt;
+	letter-spacing: 2px;
+    border-radius: 5px;
+	padding: 5px 6px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -20px;
+    font-weight: 300;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fe5656 transparent transparent transparent;
+}
+
+.tooltip:hover{
+	color:#fe5656;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+aside{
+	position: fixed;
+	right: 50px;
+	bottom:50px;
+	width: 80px;	
+}
+
+.backtolist{
+	width: 80px;
+	height: 80px;
+	margin: 10px 5px;
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #fe5656;
+
+	-ms-transform:scale(1,1);	/* IE 9*/
+	-webkit-transform: scale(1,1);	/*Safari*/
+	transform: scale(1,1);	/*Standard syntax*/
+	
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;/*Safari*/
+
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
+}
+
+.backtolist:hover{
+	-ms-transform: scale(1.2,1.2);	/* IE 9*/
+	-webkit-transform: scale(1.2,1.2);	/*Safari*/
+	transform: scale(1.2,1.2);	/*Standard syntax*/
+}
+
+.backtolist img{
+	width: 100%;
+}

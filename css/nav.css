@@ -1,0 +1,191 @@
+@charset "utf-8";
+/*CSS Document */
+
+
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px;
+    background-color: #fe5656;
+}
+
+header::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    background-image: url(../img/wave.png);
+}
+
+
+#logo{
+	height: 80px;
+	margin: 0 auto;
+}
+
+#logo img{
+	height: 100%;
+}
+
+.share{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: url(../img/fb.png) no-repeat;
+	background-position: -40px,0px;
+	background-size: 200%;
+}
+
+.share:hover{
+	background:url(../img/fb.png) no-repeat;
+	background-position: 0px,0px;
+	background-size: 200%;
+}
+
+.nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    line-height: 50px;
+    z-index: -1;
+}
+
+/*hamburger*/
+.hamburger {
+	outline:none;
+	padding: 15px 15px;
+	cursor: pointer;
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+	font: inherit;
+	color: #fff;
+	text-transform: none;
+	background-color: transparent;
+	border: 0;
+	margin-left: 20px;
+	overflow: visible; 
+}
+
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff; }
+
+.hamburger-box {
+	width: 40px;
+	height: 24px;
+	display: inline-block;
+	position: relative; 
+}
+.hamburger-inner {
+	display: block;
+	top: 50%;
+	margin-top: -2px; 
+}
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/*Elastic*/
+.hamburger--elastic .hamburger-inner {
+	top: 2px;
+	transition-duration: 0.275s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+  .hamburger--elastic .hamburger-inner::before {
+    top: 10px;
+    transition: opacity 0.125s 0.275s ease; }
+  .hamburger--elastic .hamburger-inner::after {
+    top: 20px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.hamburger--elastic.is-active .hamburger-inner {
+	transform: translate3d(0, 10px, 0) rotate(135deg);
+	transition-delay: 0.075s; 
+}
+  .hamburger--elastic.is-active .hamburger-inner::before {
+    transition-delay: 0s;
+    opacity: 0; }
+  .hamburger--elastic.is-active .hamburger-inner::after {
+    transform: translate3d(0, -20px, 0) rotate(-270deg);
+    transition-delay: 0.075s; }
+
+/*menu*/
+
+#menu{
+	width: 100%;
+	min-height: 100vh;
+	display:none;
+	margin:0 auto;
+	padding: 80px 0 0;
+	background-color: #fe5656;
+}
+
+#menu ul{
+	margin: auto;
+	padding: 0;
+	width: 50%;	
+	text-align: center;
+}
+
+#menu li{	
+	margin: 40px;
+	padding: 0;
+	width: 150px;
+	height: 150px;
+	color: #fff;
+	line-height: 150px;
+	font-size: 24px;	
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 50%;
+	text-align: center;
+
+	-ms-transform:scale(1,1);	/* IE 9*/
+	-webkit-transform: scale(1,1);	/*Safari*/
+	transform: scale(1,1);	/*Standard syntax*/
+	
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;/*Safari*/
+
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
+}
+
+#menu li:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color: #fe5656;
+	box-shadow: 2px 2px 8px #BE4040;
+    -ms-transform: scale(1.2,1.2);	/* IE 9*/
+	-webkit-transform: scale(1.2,1.2);	/*Safari*/
+	transform: scale(1.2,1.2);	/*Standard syntax*/
+}
+
+.ch_bg{
+	box-shadow: 2px 2px 8px #BE4040;
+}
