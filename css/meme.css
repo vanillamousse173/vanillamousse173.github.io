@@ -68,10 +68,6 @@ section{
 	transform: scale(1.1,1.1);	/*Standard syntax*/
 }
 
-.theme{
-	border-bottom: solid 8px #fe5656;
-}
-
 .imgbox{
 	width: 100%;
 	overflow: hidden;
@@ -83,7 +79,7 @@ section{
 	border-radius: 10px;
 }
 
-.box h2{
+.box h3{
 	box-sizing: border-box;
 	padding: 0px 20px;
 	color: #000;
