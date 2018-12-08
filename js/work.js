@@ -10,10 +10,7 @@ $(document).ready(function() {
 			$("section").empty();
 
 			$.each(data, function(index, en){
-				var html ='<div class="title">';
-				html +='<div class="col-3">';
-				html +='<img src="img/T_MEMES.png">';
-				html += '</div>';
+				var html ='<div class="col-3">';
 				html += '<a href="' + en['meme'] + '">';
 				html += '<div class="box">';
 				html += '<div class="imgbox">';
