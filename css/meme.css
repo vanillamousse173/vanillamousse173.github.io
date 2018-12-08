@@ -62,9 +62,9 @@ section{
 
 .box:hover{
 	box-shadow: 2px 2px 8px #141414;
-	-ms-transform: scale(1.2,1.2);	/* IE 9*/
-	-webkit-transform: scale(1.2,1.2);	/*Safari*/
-	transform: scale(1.2,1.2);	/*Standard syntax*/
+	-ms-transform: scale(1.1,1.1);	/* IE 9*/
+	-webkit-transform: scale(1.1,1.1);	/*Safari*/
+	transform: scale(1.1,1.1);	/*Standard syntax*/
 }
 
 .theme{
