@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900');
+
+body{
+	display: flex; /*為了使footer置底*/
+	flex-direction: column; /*由上至下排列*/
+	min-height:100vh;
+	/*可大於但不可小於 整個瀏覽器可視範圍*/
+	position: relative;
+	margin:0;
+	background:#056;
+	font-family: 'Noto Sans TC';
+}
+
+::-moz-selection{
+	color: #fff;
+	background: #fe5656;
+}
+
+::selection{
+	color: #fff;
+	background: #fe5656;
+}
+
+section{
+	position: relative;
+	width: 80%;
+	margin: 120px auto;
+}
+
+.title{
+	width: 500px;
+	margin: auto;
+}
+
+.title img{
+	width: 100%;
+}
+
+.box{
+	position: relative;
+	color: #fff;
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border-radius: 10px;
+	margin: 0;
+	overflow: hidden;
+}
+
+.box:hover{
+	box-shadow: 2px 2px 8px #141414;
+}
+
+.theme{
+	border-bottom: solid 8px #fe5656;
+}
+
+.imgbox{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.box img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.box h2{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	color: #000;
+	font-size: 18pt;
+}
