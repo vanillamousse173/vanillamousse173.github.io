@@ -46,13 +46,25 @@ section{
 	box-sizing: border-box;
 	float: left;
 	text-align: center;
-	border-radius: 10px;
 	margin: 0;
 	overflow: hidden;
+
+	-ms-transform:scale(1,1);	/* IE 9*/
+	-webkit-transform: scale(1,1);	/*Safari*/
+	transform: scale(1,1);	/*Standard syntax*/
+	
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;/*Safari*/
+
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
 }
 
 .box:hover{
 	box-shadow: 2px 2px 8px #141414;
+	-ms-transform: scale(1.2,1.2);	/* IE 9*/
+	-webkit-transform: scale(1.2,1.2);	/*Safari*/
+	transform: scale(1.2,1.2);	/*Standard syntax*/
 }
 
 .theme{
