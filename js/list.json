@@ -48,21 +48,15 @@
 	},
 
 	{
-	"meme": "yinwu.html",
-	"pic": "img/P_yinwu.jpg",
-	"title": "鸚鵡兄弟"
-	},
-
-	{
 	"meme": "evolution.html",
 	"pic": "img/P_evolution.jpg",
 	"title": "迷因的特色"
 	},
 
 	{
-	"meme": "ExpBrn.html",
-	"pic": "img/P_ExpBrn.jpg",
-	"title": "大腦開發"
+	"meme": "yinwu.html",
+	"pic": "img/P_yinwu.jpg",
+	"title": "鸚鵡兄弟"
 	},
 
 	{
@@ -70,4 +64,11 @@
 	"pic": "img/P_normie.jpg",
 	"title": "Normie"
 	}
+
+	{
+	"meme": "ExpBrn.html",
+	"pic": "img/P_ExpBrn.jpg",
+	"title": "大腦開發"
+	},
+
 ]
