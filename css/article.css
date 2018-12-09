@@ -167,3 +167,18 @@ aside{
 .backtolist img{
 	width: 100%;
 }
+
+.draw{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	height: 400px;
+}
+
+.draw img{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}

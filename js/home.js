@@ -4,7 +4,7 @@
 $(document).ready(function() {
 
 // load
-	$("header").load("index_header.html");
+	// $("header").load("index_header.html");
 
 // full img
 	$(window).bind('load resize', function() {

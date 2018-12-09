@@ -49,3 +49,64 @@ section{
 	background-color:#fe5656;
 }
 
+article{
+	display: flex;
+	align-items: center;
+	width: 70%;
+	margin: auto;
+	scroll-behavior: smooth;
+}
+
+.title{
+	width: 400px;
+	margin: 120px auto 50px;
+}
+
+.title img{
+	width: 100%;
+}
+
+p{
+	font-size: 14pt;
+	padding: 14pt 10px ;
+	margin: 0;
+	line-height: 22pt;
+	letter-spacing: 2px;
+	text-align: justify;
+}
+
+h3{
+	font-size: 16pt;
+	color: #fff;
+	display: inline-block;
+	background-color: #fe5656;
+	margin: 50px 0 0 10px ;
+	padding:5px 10px ;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.works{
+	border-radius: 10px;
+	padding: 0 10px;
+	-ms-transform:scale(1,1);	/* IE 9*/
+	-webkit-transform: scale(1,1);	/*Safari*/
+	transform: scale(1,1);	/*Standard syntax*/
+	
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;/*Safari*/
+
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
+}
+
+.works:hover{
+	box-shadow: 2px 2px 8px #141414;
+	-ms-transform: scale(1.1,1.1);	/* IE 9*/
+	-webkit-transform: scale(1.1,1.1);	/*Safari*/
+	transform: scale(1.1,1.1);	/*Standard syntax*/
+}
+
+.col-6>img{
+	width: 100%;
+}
