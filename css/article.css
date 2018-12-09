@@ -10,6 +10,7 @@ body{
 	/*可大於但不可小於 整個瀏覽器可視範圍*/
 	position: relative;
 	margin:0;
+	padding: 0;
 	background:#ffc349;
 	font-family: 'Noto Sans TC';
 }
