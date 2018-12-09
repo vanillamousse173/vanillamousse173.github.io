@@ -131,20 +131,22 @@ h3{
     visibility: visible;
 }
 
-aside{
+.backtolist{
 	position: fixed;
 	right: 50px;
-	bottom:50px;
-	width: 80px;	
-}
-
-.backtolist{
+	bottom:100px;
 	width: 80px;
-	height: 80px;
-	margin: 10px 5px;
-	border-radius: 50%;
+	width: 80px;
+	height: 160px;
 	display: inline-block;
 	box-sizing: border-box;
+
+}
+
+.backtolist img{
+	width: 100%;
+	border-radius: 50%;
+	margin: 10px 5px;
 	background-color: #fe5656;
 
 	-ms-transform:scale(1,1);	/* IE 9*/
@@ -158,14 +160,10 @@ aside{
 	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
 }
 
-.backtolist:hover{
+.backtolist img:hover{
 	-ms-transform: scale(1.2,1.2);	/* IE 9*/
 	-webkit-transform: scale(1.2,1.2);	/*Safari*/
 	transform: scale(1.2,1.2);	/*Standard syntax*/
-}
-
-.backtolist img{
-	width: 100%;
 }
 
 .draw{

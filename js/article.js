@@ -5,6 +5,7 @@ $(document).ready(function() {
 	
 // load
 	$("header").load("header.html");
+	$("aside").load("aside.html");
 
 // // scroll event
 // $(window).scroll(function() {
