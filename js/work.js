@@ -1,7 +1,7 @@
 // JavaScript Document
 
 $(document).ready(function() {
-	// $("nav").load("menu.html");
+	// $("header").load("header.html");
 	// $("footer").load("footer.html");
 	get_con('js/list.json');
 
