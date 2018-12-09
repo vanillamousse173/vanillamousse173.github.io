@@ -3,7 +3,8 @@
 
 /*tab*/
 #tab-demo{ 
-	width:100%;
+	width:80%;
+	margin: 120px auto 0px;
 }
 #tab-demo>ul{ 
 	margin:0;
@@ -22,10 +23,6 @@
 	height: 100px;
 	border-radius: 50%;
 }
-
-/*.tab-title img:last-child:hover{
-    opacity: 0;
-    }*/
 
 #tab-demo>ul>li{ 
 	display:inline-block; 
@@ -49,14 +46,10 @@
 	color:#000; 
 	background: #fff;
 	padding:10px 30px; 
-	height:100%;
+	width: 100%;
 	border-radius: 10px;
 	border:5px #fe5656 solid;
 	box-shadow: 2px 2px 8px #999;	
-}
-
-#tab-demo>.tab-inner p{ 
-	margin:0 0 5px;
 }
 
 #tab-demo>.tab-inner:nth-child(2n){

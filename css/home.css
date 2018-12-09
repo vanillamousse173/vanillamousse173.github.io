@@ -52,14 +52,14 @@ section{
 article{
 	display: flex;
 	align-items: center;
-	width: 70%;
-	margin: auto;
+	width: 80%;
+	margin: 40px auto 0px;
 	scroll-behavior: smooth;
 }
 
 .title{
 	width: 400px;
-	margin: 120px auto 50px;
+	margin: 120px auto 0px;
 }
 
 .title img{
@@ -67,8 +67,8 @@ article{
 }
 
 p{
-	font-size: 14pt;
-	padding: 14pt 10px ;
+	font-size: 12pt;
+	padding: 7pt 10px ;
 	margin: 0;
 	line-height: 22pt;
 	letter-spacing: 2px;
@@ -86,9 +86,18 @@ h3{
 	letter-spacing: 2px;
 }
 
-.works{
+.work{
+	width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.work img{
 	border-radius: 10px;
 	padding: 0 10px;
+	width: 300px;
+	height: 300px;
 	-ms-transform:scale(1,1);	/* IE 9*/
 	-webkit-transform: scale(1,1);	/*Safari*/
 	transform: scale(1,1);	/*Standard syntax*/
@@ -100,7 +109,7 @@ h3{
 	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
 }
 
-.works:hover{
+.work img:hover{
 	box-shadow: 2px 2px 8px #141414;
 	-ms-transform: scale(1.1,1.1);	/* IE 9*/
 	-webkit-transform: scale(1.1,1.1);	/*Safari*/
@@ -109,4 +118,8 @@ h3{
 
 .col-6>img{
 	width: 100%;
+}
+
+#center{
+	text-align: center;
 }
