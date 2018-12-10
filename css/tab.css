@@ -14,14 +14,63 @@
 .tab-title{
 	list-style:none;
 	position: relative;
-	display: block;
+	display: block;	
 }
 
-.tab-title img{
-/*	position: absolute;*/
-	width: 100px;
-	height: 100px;
+#c1,#c2,#c3,#c4{
+	background-position: 0px,0px;
+	background-size: 200%;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
+}
+
+#c1{
+	background: url(../img/momo.jpg) no-repeat;
+	background-position: 0px,0px;
+	background-size: 100%;
+}
+
+#c1:hover{
+	background:url(../img/momo.gif) no-repeat;
+	background-position: 0px,0px;
+	background-size: 100%;
+}
+
+#c2{
+	background: url(../img/clam.jpg) no-repeat;
+	background-position: 0px,0px;
+	background-size: 100%;
+}
+
+#c2:hover{
+	background:url(../img/clam.gif) no-repeat;
+	background-position: 0px,0px;
+	background-size: 100%;
+}
+
+#c3{
+	background: url(../img/mush.jpg) no-repeat;
+	background-position: 0px,0px;
+	background-size: 100%;
+}
+
+#c3:hover{
+	background:url(../img/mush.gif) no-repeat;
+	background-position: 0px,0px;
+	background-size: 100%;
+}
+
+#c4{
+	background: url(../img/RRC.jpg) no-repeat;
+	background-position: 0px,0px;
+	background-size: 100%;
+}
+
+#c4:hover{
+	background:url(../img/RRC.gif) no-repeat;
+	background-position: 0px,0px;
+	background-size: 100%;
 }
 
 #tab-demo>ul>li{ 
@@ -45,15 +94,16 @@
 	clear:both; 
 	color:#000; 
 	background: #fff;
+	margin-top: 50px;
 	padding:10px 30px; 
 	width: 100%;
 	border-radius: 10px;
-	border:5px #fe5656 solid;
-	box-shadow: 2px 2px 8px #999;	
+	border:5px #ffc349 solid;
+	box-shadow: 2px 2px 8px #999;
 }
 
 #tab-demo>.tab-inner:nth-child(2n){
-	border-color: #ffc349;
+	border-color: #fe5656;
 }
 
 

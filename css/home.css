@@ -53,13 +53,13 @@ article{
 	display: flex;
 	align-items: center;
 	width: 80%;
-	margin: 40px auto 0px;
+	margin: 120px auto 0px;
 	scroll-behavior: smooth;
 }
 
 .title{
 	width: 400px;
-	margin: 120px auto 0px;
+	margin: auto;
 }
 
 .title img{
@@ -80,7 +80,7 @@ h3{
 	color: #fff;
 	display: inline-block;
 	background-color: #fe5656;
-	margin: 50px 0 0 10px ;
+	margin: 10px 0 0 10px ;
 	padding:5px 10px ;
 	font-weight: 700;
 	letter-spacing: 2px;
