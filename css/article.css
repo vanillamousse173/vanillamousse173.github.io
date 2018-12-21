@@ -52,6 +52,7 @@ p{
 	line-height: 22pt;
 	letter-spacing: 2px;
 	text-align: justify;
+	font-weight: 400;
 }
 
 h3{
@@ -61,7 +62,7 @@ h3{
 	background-color: #fe5656;
 	margin: 50px 0 0 10px ;
 	padding:5px 10px ;
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: 2px;
 }
 
