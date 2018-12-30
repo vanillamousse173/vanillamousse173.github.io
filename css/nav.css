@@ -5,15 +5,15 @@
 header {
     position: fixed;
     z-index: 1000;
-    top: 0;
-    left: 0;
+    top: -100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
     padding: 0 40px;
-    background-color: #fe5656;
+	background-color: #fe5656;
+	transition: top 0.5s;
 }
 
 header::after {

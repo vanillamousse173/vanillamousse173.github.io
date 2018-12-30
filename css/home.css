@@ -3,6 +3,8 @@
 @import url("rwd.css");
 @import url("nav.css");
 @import url("tab.css");
+@import url("Links.css");
+@import url("FAQ.css");
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900');
 
 body{
@@ -34,6 +36,7 @@ section{
 }
 
 .content{
+	height: 750px;
 	position: relative;
 	width: 100%;
 	overflow: hidden;
@@ -45,19 +48,16 @@ section{
 
 .content:nth-child(3n-1){
 	background-color: #056;
+	color: #fff;
 }
 
 .content:nth-child(3n){
 	background-color:#fe5656;
 }
 
-article .home{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-align-items: center;
-	align-items: center;
+article,.home{
 	width: 80%;
-	margin: 120px auto 0px;
+	margin: 60px auto;
 	scroll-behavior: smooth;
 }
 
@@ -66,14 +66,93 @@ article .home{
 	width: 100%;
 	bottom: 0;
 	left: 0;
+	z-index: 10;
 }
 
+.home p{
+	position: absolute;
+	top: 30%;
+	font-size: 12pt;
+}
+
+.wraparrow{
+	position :absolute;
+	left:60%;
+	top: 60%;
+}
+
+.wraparrow2{
+	position :absolute;
+	left:90%;
+	top: 80%;
+}
+
+.wraparrowleft{
+	position :absolute;
+	left:50%;
+	top: 50%;
+}
+
+.downarrow, .leftarrow {
+	width : 0 ; 
+	height : 0 ;
+	margin: 0;
+	border-width : 16px ;
+	border-style :solid;
+	border-color :transparent transparent  #fe5656  transparent;
+	transform: ;
+	display: block;
+	box-sizing: border-box;
+	transform: rotate(-180deg) scaleX(0.6);
+}
+
+.leftarrow  {
+	border-color :transparent  #fe5656 transparent  transparent;
+	transform: scaleY(0.6);
+}
+
+.downarrow::after,.leftarrow::after {
+	content : " " ;
+	width : 2px ;
+	height : 0px ;
+	background-color : #fe5656 ;
+	position :absolute;
+	top : 5px ;
+	left : -1px ;
+	transform: rotate(-180deg);
+	animation: line 1.5s infinite ease-in-out; 
+	-webkit-animation: line 1.5s infinite ease-in-out;
+}
+
+.leftarrow::after{	
+	width : 0px ;
+	height : 2px ;
+	top : 0px ;
+	left : 0px ;
+	transform: rotate(180deg);
+	animation: lineleft 1.5s infinite ease-in-out; 
+	-webkit-animation: lineleft 1.5s infinite ease-in-out;
+}
+
+@keyframes line{
+  0% {height: 0px; top:350px;}
+  50% {height: 250px; top: 5px;}
+  100% {height: 0px; top: 5px;}
+}
+
+@keyframes lineleft{
+	0% {width: 0px; left:120px;}
+	50% {width: 100px; left: 5px;}
+	100% {width: 0px; left: 5px;}
+  }
+
 .title{
-	margin: auto;
+	width: 300px;
+	margin: 60px auto 0;
 }
 
 .title img{
-	width: 50%;
+	width: 100%;	
 }
 
 p{
@@ -96,9 +175,20 @@ h3{
 	letter-spacing: 2px;
 }
 
+.work{
+	margin: 40px auto 0;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+
 .work img{
-	border-radius: 10px;
 	width: 100%;
+}
+
+#memebtn,#projectbtn{
+	width: 25%;
+	border-radius: 10px;
 	-ms-transform:scale(1,1);	/* IE 9*/
 	-webkit-transform: scale(1,1);	/*Safari*/
 	transform: scale(1,1);	/*Standard syntax*/
@@ -110,17 +200,55 @@ h3{
 	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
 }
 
-.work img:hover{
+#memebtn:hover,#projectbtn:hover{
 	box-shadow: 2px 2px 8px #141414;
 	-ms-transform: scale(1.1,1.1);	/* IE 9*/
 	-webkit-transform: scale(1.1,1.1);	/*Safari*/
 	transform: scale(1.1,1.1);	/*Standard syntax*/
 }
 
-.col-6>img{
+#memebtn{
+	background-color: #ffc649;
+}
+
+#projectbtn{
+	background-color: #fe5656;
+}
+
+.about img{
 	width: 100%;
 }
 
-#center{
+.about p{
 	text-align: center;
+}
+
+.center{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+
+	.work{
+		width: 80%;
+	}
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+
+	.home p{
+		position: absolute;
+		left: 50%;
+		top: 30%;
+		font-size: 12pt;
+	}
+
+	.work{
+		width: 80%;
+	}
 }

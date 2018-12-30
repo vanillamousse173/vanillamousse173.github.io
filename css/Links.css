@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+.puz{
+	width: 540px;
+	margin: 0 auto;
+	float: left;
+}
+
+.tip{
+	width: 64px;
+	display: inline-block;
+	box-sizing: border-box;	
+	margin: 2px;
+	position: relative;
+}
+
+.tip img{
+	width: 100%;
+	
+	-ms-transform:scale(1,1);	/* IE 9*/
+	-webkit-transform: scale(1,1);	/*Safari*/
+	transform: scale(1,1);	/*Standard syntax*/
+	
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;/*Safari*/
+
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
+}	
+
+.tip img:hover{
+	box-shadow: 2px 2px 8px #141414;
+	-ms-transform: scale(1.1,1.1);	/* IE 9*/
+	-webkit-transform: scale(1.1,1.1);	/*Safari*/
+	transform: scale(1.1,1.1);	/*Standard syntax*/
+}
+
+.tip .text{
+    visibility: hidden;
+    background-color: #fe5656;
+    box-sizing: border-box;
+    width: 150px;
+    color: #fff;
+    text-align: center;
+    font-size: 12pt;
+    border-radius: 5px;
+	padding: 5px 6px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -75px;
+}
+
+.tip:hover .text{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tip .text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fe5656 transparent transparent transparent;
+}
