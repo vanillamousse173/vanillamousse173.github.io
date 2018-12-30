@@ -4,17 +4,18 @@
 /*tab*/
 #tab-demo{ 
 	width:80%;
-	margin: 120px auto 0px;
+	margin:auto;
+	text-align: center;
 }
 #tab-demo>ul{ 
-	margin:0;
+	margin: auto;
 	list-style:none;
 }
 
 .tab-title{
 	list-style:none;
 	position: relative;
-	display: block;	
+	cursor: pointer;
 }
 
 #c1,#c2,#c3,#c4{
@@ -23,6 +24,18 @@
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
+	margin: 20px 20px 0px 20px;
+	
+	-ms-transform:scale(1,1);	/* IE 9*/
+	-webkit-transform: scale(1,1);	/*Safari*/
+	transform: scale(1,1);	/*Standard syntax*/
+	
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;/*Safari*/
+
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
+
 }
 
 #c1{
@@ -35,6 +48,11 @@
 	background:url(../img/momo.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
+	
+	-ms-transform: scale(1.1,1.1);	/* IE 9*/
+	-webkit-transform: scale(1.1,1.1);	/*Safari*/
+	transform: scale(1.1,1.1);	/*Standard syntax*/
+	box-shadow: 2px 2px 8px #bc9b58;
 }
 
 #c2{
@@ -47,6 +65,11 @@
 	background:url(../img/clam.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
+
+	-ms-transform: scale(1.1,1.1);	/* IE 9*/
+	-webkit-transform: scale(1.1,1.1);	/*Safari*/
+	transform: scale(1.1,1.1);	/*Standard syntax*/
+	box-shadow: 2px 2px 8px #bc9b58;
 }
 
 #c3{
@@ -59,6 +82,11 @@
 	background:url(../img/mush.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
+
+	-ms-transform: scale(1.1,1.1);	/* IE 9*/
+	-webkit-transform: scale(1.1,1.1);	/*Safari*/
+	transform: scale(1.1,1.1);	/*Standard syntax*/
+	box-shadow: 2px 2px 8px #bc9b58;
 }
 
 #c4{
@@ -71,6 +99,11 @@
 	background:url(../img/RRC.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
+
+	-ms-transform: scale(1.1,1.1);	/* IE 9*/
+	-webkit-transform: scale(1.1,1.1);	/*Safari*/
+	transform: scale(1.1,1.1);	/*Standard syntax*/
+	box-shadow: 2px 2px 8px #bc9b58;
 }
 
 #tab-demo>ul>li{ 
@@ -85,25 +118,22 @@
 	text-decoration:none;
 }
 
-/*#tab-demo > ul > li.active{ 
-	border-top:15px solid #fff; 
-}*/
-
 
 #tab-demo>.tab-inner{ 
 	clear:both; 
 	color:#000; 
 	background: #fff;
-	margin-top: 50px;
+	margin-top: 20px;
 	padding:10px 30px; 
 	width: 100%;
 	border-radius: 10px;
-	border:5px #ffc349 solid;
-	box-shadow: 2px 2px 8px #999;
+	position: relative;
+	overflow: hidden;
 }
 
-#tab-demo>.tab-inner:nth-child(2n){
+
+/* #tab-demo>.tab-inner:nth-child(2n){
 	border-color: #fe5656;
-}
+} */
 
 

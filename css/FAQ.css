@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*CSS Document */
+
+.accordion {
+    font-family: 'Noto Sans TC';
+    border: none;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 12pt;
+    transition: 0.4s;
+    background: #ffc349;
+    margin: 5px 0;
+    }
+  
+.active, .accordion:hover {
+    background-color: #056;
+    color: #fff;
+    }
+
+.active{  
+    margin: 5px 0 5px 0;
+    }
+
+.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    }
+  
+.active:after {
+    content: "\2212";
+    }
+  
+.panel {
+    background: #fff;
+    font-size: 12pt;
+    font-family: 'Noto Sans TC';
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    }
+
+.panel a{
+        text-decoration: none;
+        color:#fe5656;
+    }
+    
+.panel a:hover{
+        border-bottom: dotted 2px #fe5656;
+    }

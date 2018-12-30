@@ -5,11 +5,12 @@
 <title>培養meme</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="shortcut icon" href="img/page.ico">
-	<link href="css/home.css" rel="stylesheet" type="text/css"> 
+    <link href="css/home.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript"src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript"src="js/home.js"></script>
     <script type="text/javascript"src="js/nav.js"></script>
     <script type="text/javascript"src="js/tab.js"></script>
+    <script type="text/javascript"src="js/FAQ.js"></script>
 </head>
 
 <body>
@@ -23,13 +24,13 @@
         </button>    
         <div id="menu">
         <ul>
-            <li class="box">Home</li>
-            <li class="box">Works</li>
-            <li class="box">About</li>
-            <li class="box">Character</li>
-            <li class="box">Links</li>
-            <li class="box">FAQ</li>
-            <li class="box">Contact</li>
+            <li id="a1"><a href="#s1"></a>Home</li>
+            <li id="a2"><a href="#s2"></a>Works</li>
+            <li id="a3"><a href="#s3"></a>About</li>
+            <li id="a4"><a href="#s4"></a>Character</li>
+            <li id="a5"><a href="#s5"></a>Links</li>
+            <li id="a6"><a href="#s6"></a>FAQ</li>
+            <li id="a7"><a href="#s7"></a>Contact</li>
         </ul>    
         </div>
     </div>      
@@ -37,28 +38,34 @@
         <a href="index.html"><img src="img/logo.png"/></a>      
     </div>
      <a href="https://www.facebook.com/%E5%85%92%E8%8A%8B%E5%9C%93%E5%A4%AA%E9%83%8E-1999599493650425/" target="_blank"><div class="share"></div></a> 
- </header>
+</header>
 
 <section>
-    <div class="content" id="1">
+    <div class="content" id="s1">
         <div class="home">
-            <img src="img/home.png" alt="home">
+            <p>為了讓迷因更加偉大。</br>
+            To make memes great again and again.</p>
+            <img src="img/home (1).png" alt="home">
+        </div>
+        <div class="wraparrow">
+            <div class="downarrow"></div>
         </div>
     </div>
-    <div class="content" id="2">
-        <article>
-            <div class="title"><img src="img/T_MEMES.png" alt="Works"></div>
-            <div class="work col-6 col-m-6"><img src="img/links.png" alt="Memes"></div>
-            <div class="work col-6 col-m-6"><img src="img/lab.png" alt="Projects"></div>
-        </article>
+    <div class="content" id="s2">
+        <div class="title"><img src="img/title/WORKS.png" alt="Works"></div>
+        <div class="work">
+            <div id="memebtn"><a href="meme.html"><img src="img/btn_memes.png" alt="Memes"></div></a>
+            <div id="projectbtn"><a href="project.html"><img src="img/btn_project.png" alt="Projects"></div></a>
+        </div>
+        <div class="wraparrow2">
+            <div class="downarrow"></div>
+        </div>
     </div>
-    <div class="content" id="3">
+    <div class="content" id="s3">
         <article>
-            <div>
-                <img src="img/lab.png" alt="lab">
-            </div>
-            <div id="center">
-                <div class="title"><img src="img/T_MEMES.png" alt="About"></div>
+            <div class="about col-6 col-m-6"><img src="img/aquarium.png" alt="lab"></div>
+            <div class="about col-6 col-m-6">
+                <div class="title"><img src="img/title/ABOUT.png" alt="About"></div>
                 <p>這裡是由ㄇ團隊架設的meme主題網站，<br>產製meme科普文還有一些相關的東東。</p>
             </div>
         </article>
@@ -66,17 +73,18 @@
 </section>
 
 <section>
-        <div class="content" id="4">
+    <div class="content" id="s4">
+        <div class="title"><img src="img/title/CHARACTER.png" alt="About"></div>
         <div id="tab-demo">
             <ul class="tab-title">
                 <li id="c1"><a href="#tab01"></a></li>
                 <li id="c2"><a href="#tab02"></a></li>
                 <li id="c3"><a href="#tab03"></a></li>
                 <li id="c4"><a href="#tab04"></a></li>
-             </ul>
-             <div id="tab01" class="tab-inner">
+            </ul>
+            <div id="tab01" class="tab-inner">
                 <h3>毛毛蔥</h3>
-                <p>Meme的大愛好者，喜歡追根究底因此博學多聞（在meme文化方面）。<br>正身不明，但據本人表示是一根柔軟度很好的蔥，它的柔軟不只體現在身體上，也可以從態度看出端倪。<br>面對一個新的meme的時候，會先嘗試理解成因，包容過時的meme，認為它們還是有可取之處。</p>
+                <p>迷因的大愛好者，喜歡追根究底因此博學多聞（在迷因文化方面）。<br>正身不明，但據本人表示是一根柔軟度很好的蔥，它的柔軟不只體現在身體上，也可以從態度看出端倪。<br>面對一個新的meme的時候，會先嘗試理解成因，包容過時的meme，認為它們還是有可取之處。</p>
                 <p>平常喜歡蠕動，很嚮往成為翠玉白菜。</p>
                 <p>最近的煩惱：在地球貓貓教和飛天義大利麵神教之間掙扎<br>喜歡的食物：昨天晚餐是麻辣燙<br>
                 最近的休閒：在看香菇推薦的《ARuFa的超．浪費時間圖鑑》</p>
@@ -84,7 +92,7 @@
             <div id="tab02" class="tab-inner">
                 <h3>蛤蜊</h3>
                 <p>一個普通的蛤蜊，不太確定有沒有熟，<br>沒有嘴巴也不講話，但能像響板一樣發出聲音。</p>
-                <p>平常喜歡自製meme與他人交流，<br>
+                <p>平常喜歡自製迷因與他人交流，<br>
                 但是存在感低落，邊緣人。</p>
                 <p>最近的煩惱：很喜歡雙關語但總想不出什麼好梗<br>喜歡的食物：蒜香白酒蛤蜊義大利麵<br>
                 綽號：蜊蜊安</p>
@@ -92,7 +100,7 @@
             <div id="tab03" class="tab-inner">
                 <h3>香菇</h3>
                 <p>長得像吐司但實際上是切片蘑菇（加在咖哩裡的那種），<br>笑臉迎人但是出口成髒，隨處可見的大學生，<br>因為說話會分解所以只能講一些簡單的字，譬如e04。</p>
-                <p>平常喜歡看meme但是都在meme社團裡潛水。</p>
+                <p>平常喜歡看迷因但是都在社團裡潛水。</p>
                 <p>最近的煩惱：魯<br>
                 喜歡的食物：肥宅快樂餐<br>喜歡的節目：喜歡看日綜動漫，但又被室友笑肥宅</p>
             </div>
@@ -104,20 +112,74 @@
             </div>
         </div>
     </div>
-    <div class="content" id="5"></div>
-    <div class="content" id="6"></div>
-    <div class="content" id="7">
-            <article>
-            <div>
-                <img src="img/links.png" alt="link">
+    <div class="content" id="s5">
+        <article>
+            <div class="col-6 col-m-6" id="puzzle"></div>
+            <div class="about col-6 col-m-6">
+                <div class="title"><img src="img/title/LINKS.png" alt="About"></div>
+                <p>點擊方框前往推薦網站</p>
+                <div class="wraparrowleft">
+                    <div class="leftarrow"></div>
+                    <div class="leftarrow"></div>
+                </div>
             </div>
-            <div id="center">
-                <div class="title"><img src="img/T_MEMES.png" alt="About"></div>
-                <p>嗨囉，我們是ㄇ，喜歡看meme的normie三枚，</br>致力於降低提到meme時，所需花費的時間成本。</br>希望世界可以透過meme找到一些知識和歡笑。</p>
+        </article>
+    </div>
+    <div class="content" id="s6">
+        <div class="title"><img src="img/title/FAQ.png" alt="Works"></div>
+        <div class="work">
+            <div class="col-6 col-m-6">
+                <div class="accordion">1.這裡是幹嘛用的？</div>
+                <div class="panel">
+                <p>是由ㄇ團隊架設的meme主題網站，產製迷因科普文還有一些相關的東東。</p>           </div>
+                <div class="accordion">2.這裡多久會更新？</div>
+                <div class="panel">
+                <p>迷因科普文一週兩次，其他內容不定時更新，謝謝您的關注。</p>
+                </div>
+                <div class="accordion">3.我迷路ㄌ</div>
+                <div class="panel">
+                <p>網站地圖自行取用↓</br>
+                    <a href="meme.html">Meme</a>→看一些memeㄉ背景故事</br>
+                    <a href=""></a>Project→小遊戲和meme大大ㄉ專訪+其他優質內容</br>
+                        FAQ→你正在看</br>
+                        Links→精選網站，前往網路世界冒險</br>
+                        Character→認識培養meme的小夥伴們</p>
+                </div>
+            </div>
+            <div class="col-6 col-m-6">
+                <div class="accordion">4.會有迷因搬運或翻譯嗎？</div>
+                <div class="panel">
+                <p>看狀況，粉專有的話就有，沒有就沒有。（網站不會有）</p>
+                </div>
+                <div class="accordion">5.可以投稿嗎？</div>
+                <div class="panel">
+                <p>ㄅ行喔，ㄅ歉。</p>
+                </div>
+                <div class="accordion">6.為什麼一下寫meme一下寫迷因？</div>
+                <div class="panel">
+                <p>爽。</p>
+                </div>
+                <div class="accordion">7.欸你們有東西寫錯ㄌ</div>
+                <div class="panel">
+                <p>可以用底下那個留言，或是粉專私訊。好人一定會有好報ㄉ。</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="content" id="s7">
+        <article>
+            <div class="about col-6 col-m-6"><img src="img/Links.png" alt="lab"></div>
+            <div class="about col-6 col-m-6">
+                <div class="title"><img src="img/title/LINKS.png" alt="About"></div>
+                <p>可以在這裡跟我們說說話，<br>有相關問題、合作邀約、任何建議也歡迎留言。</p>
             </div>
         </article>
     </div>
 </section>
+
+<footer>
+    &copy; 培養meme網站的內容由ㄇ團隊製作，歡迎轉貼並附上來源。Directed by Robert B. Weide, YP Chang.
+</footer>
 
 </body>
 
