@@ -152,18 +152,87 @@ header::after {
 	text-align: center;
 }
 
+#a1{
+	background: url(../img/title/btn_home.png) no-repeat;
+}
+
+#a1:hover{
+	background: url(../img/title/btn_home_h.png) no-repeat;
+	background-size: 80%;
+	background-position: 18px,35px;
+}
+
+#a2{
+	background: url(../img/title/btn_works.png) no-repeat;
+}
+
+#a2:hover{
+	background: url(../img/title/btn_works_h.png) no-repeat;
+	background-size: 80%;
+	background-position: 18px,35px;
+}
+
+#a3{
+	background: url(../img/title/btn_about.png) no-repeat;
+}
+
+#a3:hover{
+	background: url(../img/title/btn_about_h.png) no-repeat;
+	background-size: 80%;
+	background-position: 18px,35px;
+}
+
+#a4{
+	background: url(../img/title/btn_character.png) no-repeat;
+}
+
+#a4:hover{
+	background: url(../img/title/btn_character_h.png) no-repeat;
+	background-size: 80%;
+	background-position: 18px,35px;
+}
+
+#a5{
+	background: url(../img/title/btn_links.png) no-repeat;
+}
+
+#a5:hover{
+	background: url(../img/title/btn_links_h.png) no-repeat;
+	background-size: 80%;
+	background-position: 18px,35px;
+}
+
+#a6{
+	background: url(../img/title/btn_faq.png) no-repeat;
+}
+
+#a6:hover{
+	background: url(../img/title/btn_faq_h.png) no-repeat;
+	background-size: 80%;
+	background-position: 18px,35px;
+}
+
+#a7{
+	background: url(../img/title/btn_contact.png) no-repeat;
+}
+
+#a7:hover{
+	background: url(../img/title/btn_contact_h.png) no-repeat;
+	background-size: 80%;
+	background-position: 18px,35px;
+}
+
 #menu li{	
 	margin: 40px;
 	padding: 0;
 	width: 150px;
-	height: 150px;
-	color: #fff;
-	line-height: 150px;
-	font-size: 24px;	
+	height: 150px;	
 	display: inline-block;
 	box-sizing: border-box;
 	border-radius: 50%;
 	text-align: center;
+	background-size: 80%;
+	background-position: 18px,35px;
 
 	-ms-transform:scale(1,1);	/* IE 9*/
 	-webkit-transform: scale(1,1);	/*Safari*/
@@ -186,6 +255,11 @@ header::after {
 	transform: scale(1.2,1.2);	/*Standard syntax*/
 }
 
-.ch_bg{
-	box-shadow: 2px 2px 8px #BE4040;
+footer{
+	padding: 10px;
+	text-align: center;
+	font-size: 10pt;
+	color: #fff;
+	background: #fe5656;
+	font-weight: 300;
 }
