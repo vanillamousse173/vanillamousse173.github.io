@@ -71,7 +71,8 @@ article,.home{
 
 .home p{
 	position: absolute;
-	top: 30%;
+	top: 75%;
+	left:10%;
 	font-size: 12pt;
 }
 
@@ -233,22 +234,9 @@ h3{
 /*for tablets*/
 @media only screen and (min-width: 768px) {
 
-	.work{
-		width: 80%;
-	}
 }
 
 /*for desktop*/
 @media only screen and (min-width: 1200px) {
 
-	.home p{
-		position: absolute;
-		left: 50%;
-		top: 30%;
-		font-size: 12pt;
-	}
-
-	.work{
-		width: 80%;
-	}
 }
