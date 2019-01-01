@@ -1,6 +1,10 @@
 @charset "utf-8";
 /*CSS Document */
 
+@import url("rwd.css");
+@import url("nav.css");
+@import url("swiper.css");
+
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900');
 
 body{
@@ -10,7 +14,7 @@ body{
 	/*可大於但不可小於 整個瀏覽器可視範圍*/
 	position: relative;
 	margin:0;
-	padding: 0;
+	padding:0;
 	background:#ffc349;
 	font-family: 'Noto Sans TC';
 }
@@ -31,13 +35,13 @@ section{
 }
 
 article{
-	width: 60%;
-	margin: 120px auto;
+	width:80%;
+	margin: 60px auto;
 	scroll-behavior: smooth;
 }
 
 .title{
-	width: 500px;
+	width: 400px;
 	margin: auto;
 }
 
@@ -46,7 +50,7 @@ article{
 }
 
 p{
-	font-size: 14pt;
+	font-size: 12pt;
 	padding: 14pt 10px ;
 	margin: 0;
 	line-height: 22pt;
@@ -101,7 +105,7 @@ h3{
     width: 200px;
     color: #fff;
     text-align: left;
-    font-size: 12pt;
+    font-size: 10pt;
     line-height: 18pt;
 	letter-spacing: 2px;
     border-radius: 5px;
@@ -136,12 +140,11 @@ h3{
 .backtolist{
 	position: fixed;
 	right: 50px;
-	bottom:100px;
+	bottom:50px;
 	width: 80px;
-	width: 80px;
-	height: 160px;
 	display: inline-block;
 	box-sizing: border-box;
+	z-index: 21;
 
 }
 
@@ -172,13 +175,64 @@ h3{
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	margin: 0;
+	margin-bottom: 0px;
 	padding: 0;
-	height: 400px;
+	height: 300px;
+	z-index: -20;
 }
 
 .draw img{
 	height: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+/* swiper */
+.swiper-container{
+	width: 100%;
+	margin:30px auto 0;
+}
+
+.swiper-slide {
+	text-align: center;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img{
+	width: 80%;
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+	article{
+		width:60%;
+	}
+
+	.draw{
+		position: fixed;
+		height: 400px;
+	}
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+	article{
+		width:50%;
+	}
+
+	.draw{
+		height: 500px;
+	}
 }

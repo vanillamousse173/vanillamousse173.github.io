@@ -45,7 +45,7 @@
         <div class="home">
             <p>為了讓迷因更加偉大。</br>
             To make memes great again and again.</p>
-            <img src="img/home_new.png" alt="home">
+            <img src="img/home_new_high.png" alt="home">
         </div>
         <!-- <div class="wraparrow">
             <div class="downarrow"></div>
@@ -54,8 +54,14 @@
     <div class="content" id="s2">
         <div class="title"><img src="img/title/WORKS.png" alt="Works"></div>
         <div class="work">
-            <div id="memebtn"><a href="meme.html"><img src="img/btn_memes.png" alt="Memes"></div></a>
-            <div id="projectbtn"><a href="project.html"><img src="img/btn_project.png" alt="Projects"></div></a>
+            <div id="memebtn">
+                <a href="meme.html"><img src="img/btn_memes.png" alt="Memes"></a>
+                <p>迷因主題園區</p>
+            </div>
+            <div id="projectbtn">
+                <a href="project.html"><img src="img/btn_project.png" alt="Projects"></a>
+                <p>一些有趣的專案</p>
+            </div>
         </div>
         <!-- <div class="wraparrow2">
             <div class="downarrow"></div>
@@ -66,10 +72,13 @@
             <div class="about col-6 col-m-6"><img src="img/aquarium.png" alt="lab"></div>
             <div class="about col-6 col-m-6">
                 <div class="title"><img src="img/title/ABOUT.png" alt="About"></div>
-                <p>這裡是由ㄇ團隊架設的meme主題網站，</br>產製meme科普文還有一些相關的東東。</p>
-                <p>ㄇ是由三個喜歡看meme的normie組成，</br>
-                秉持著快樂的心想要推廣迷因文化，</br>
+                <p>這裡是ㄇ團隊架設的迷因主題網站，</br>產製meme科普文還有一些相關的東東。</p>
+                <p>ㄇ由三個喜歡看meme的normie組成，</br>
+                秉持著「這個不能只有我看到」的心推廣迷因文化，</br>
                 希望世界可以透過meme找到一些知識和歡笑。</p>
+                <p>（如果你有空的話）</br>
+                跟著培養memeㄉ毛毛蔥、香菇、蛤蜊和小紅貓，</br>
+                一起探索迷因的世界吧！</p>
             </div>
         </article>
     </div>
@@ -80,10 +89,10 @@
         <div class="title"><img src="img/title/CHARACTER.png" alt="About"></div>
         <div id="tab-demo">
             <ul class="tab-title">
-                <li id="c1"><a href="#tab01"></a></li>
-                <li id="c2"><a href="#tab02"></a></li>
-                <li id="c3"><a href="#tab03"></a></li>
-                <li id="c4"><a href="#tab04"></a></li>
+                <li id="c1"><a href="#tab01"></a><div id="tri" class="tri"></div></li>
+                <li id="c2"><a href="#tab02"></a><div id="tri" class="tri"></div></li>
+                <li id="c3"><a href="#tab03"></a><div id="tri" class="tri"></div></li>
+                <li id="c4"><a href="#tab04"></a><div id="tri" class="tri"></div></li>
             </ul>
             <div id="tab01" class="tab-inner">
                 <h3>毛毛蔥</h3>
@@ -117,14 +126,14 @@
     </div>
     <div class="content" id="s5">
         <article>
-            <div class="col-6 col-m-6" id="puzzle"></div>
-            <div class="about col-6 col-m-6">
+            <div class="col-6 col-m-12" id="puzzle"></div>
+            <div class="about col-6 col-m-12">
                 <div class="title"><img src="img/title/LINKS.png" alt="About"></div>
                 <p>點擊方框前往推薦網站</p>
-                <div class="wraparrowleft">
+                <!-- <div class="wraparrowleft">
                     <div class="leftarrow"></div>
                     <div class="leftarrow"></div>
-                </div>
+                </div> -->
             </div>
         </article>
     </div>
@@ -143,10 +152,10 @@
                 <div class="panel">
                 <p>網站地圖自行取用↓</br>
                     <a href="meme.html">Meme</a>→看一些memeㄉ背景故事</br>
-                    <a href=""></a>Project→小遊戲和meme大大ㄉ專訪+其他優質內容</br>
+                    <a href="project.html">Project</a>→小遊戲和meme大大ㄉ專訪+其他優質內容</br>
                         FAQ→你正在看</br>
-                        Links→精選網站，前往網路世界冒險</br>
-                        Character→認識培養meme的小夥伴們</p>
+                    <span id="b5">Links</span>→精選網站，前往網路世界冒險</br>
+                    <span id="b4">Character</span>→認識培養meme的小夥伴們</p>
                 </div>
             </div>
             <div class="col-6 col-m-6">
@@ -175,14 +184,14 @@
             <div class="about col-6 col-m-6">
                 <div class="title"><img src="img/title/CONTACT.png" alt="About"></div>
                 <p>可以在這裡跟我們說說話，<br>有相關問題、合作邀約、任何建議也歡迎留言。</p>
+                <textarea id="subject" name="subject" placeholder="我也想跟小紅貓玩" onfocus="this.value=''" style="height:200px"></textarea>
+                <input type="submit" value="Submit">
             </div>
         </article>
     </div>
 </section>
 
-<footer>
-    &copy; 培養meme網站的內容由ㄇ團隊製作，歡迎轉貼並附上來源。Directed by Robert B. Weide, YP Chang.
-</footer>
+<footer></footer>
 
 </body>
 

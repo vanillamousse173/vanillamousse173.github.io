@@ -3,23 +3,62 @@
 <head>
 <meta charset="utf-8">
 <title>培養meme</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="shortcut icon" href="img/page.ico">
-    <link href="css/nav.css" rel="stylesheet" type="text/css">
-    <link href="css/rwd.css" rel="stylesheet" type="text/css">
     <link href="css/article.css" rel="stylesheet" type="text/css">    
-	<script type="text/javascript"src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript"src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript"src="js/nav.js"></script>
     <script type="text/javascript"src="js/article.js"></script>
+    <script type="text/javascript"src="js/swiper.js"></script>
 </head>
 
 <body>
 
-<header></header>
+    <header>    
+        <div class="nav">
+            <button class="hamburger hamburger--elastic" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </button>    
+            <div id="menu">
+            <ul>
+                <a href="index.html/#s1"><li id="a1"></li></a>
+                <a href="index.html/#s2"><li id="a2"></li></a>
+                <a href="index.html/#s3"><li id="a3"></li></a>
+                <a href="index.html/#s4"><li id="a4"></li></a>
+                <a href="index.html/#s5"><li id="a5"></li></a>
+                <a href="index.html/#s6"><li id="a6"></li></a>
+                <a href="index.html/#s7"><li id="a7"></li></a>
+            </ul>    
+            </div>
+        </div>      
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png"/></a>      
+        </div>
+        <a href="https://www.facebook.com/%E5%85%92%E8%8A%8B%E5%9C%93%E5%A4%AA%E9%83%8E-1999599493650425/" target="_blank">
+            <div class="share"></div>
+        </a> 
+</header>
 
 <section>
     <div class="content">
         <article>
-        <div class="title"><img src="img/P_WhatIsMeme.png" alt="doge"></div>   
+        <div class="title"><img src="img/P_WhatIsMeme.png" alt="doge"></div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/Ct6BUPvE2sM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="swiper-slide"><a href="https://funnyjunk.com/funny_pictures/4755454/DOge/" target="_blank">
+                <img src="img/article/doge2.png" alt="doge2"></a></div>
+                <div class="swiper-slide"><img src="img/article/doge3.jpg" alt="doge3"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>   
         <p>「這張圖是meme嗎？還是只是梗圖？」</br>「影片就不能被稱作meme？」</p>
         <p>meme、模因、迷因，指的到底是啥毀？</br>今天，我們就來看看meme到底是什麼。</p>
         <h3>原始的meme</h3>
@@ -41,7 +80,30 @@
     </div>
 </section>
 
-<aside></aside>
+<aside>
+    <div class="backtolist">
+        <a href="meme.html"><img src="img/memes.png" alt="memes"></a>
+    </div>
+    <div class="draw"><img src="img/for_meme2.png" alt="meme"></div>
+</aside>
+
+<footer></footer>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 
 </body>
 

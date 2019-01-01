@@ -46,11 +46,12 @@
     transition: max-height 0.2s ease-out;
     }
 
-.panel a{
-        text-decoration: none;
-        color:#fe5656;
+.panel a,.panel span{
+    cursor: pointer;
+    text-decoration: none;
+    color:#fe5656;
     }
     
-.panel a:hover{
-        border-bottom: dotted 2px #fe5656;
+.panel a:hover,.panel span:hover{
+    border-bottom: dotted 2px #fe5656;
     }

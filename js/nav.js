@@ -6,7 +6,7 @@ $(document).ready(function() {
 	window.onscroll = function() {scrollFunction()};
 
 	function scrollFunction() {
-	  if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		$("header").css({'top' : '0px'});
 	  } else {
 		$("header").css({'top' : '-100px'});

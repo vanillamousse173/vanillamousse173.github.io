@@ -4,8 +4,9 @@
 $(document).ready(function() {
 	
 // load
-	$("header").load("header.html");
-	$("aside").load("aside.html");
+	// $("header").load("header.html");
+	$("footer").load("footer.html");
+
 
 // // scroll event
 // $(window).scroll(function() {

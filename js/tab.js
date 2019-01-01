@@ -7,6 +7,8 @@ $(document).ready(function() {
     
         $li.click(function(){
             $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
+
         });
     });
+    
 });

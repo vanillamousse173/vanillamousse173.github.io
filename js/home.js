@@ -6,6 +6,7 @@ $(document).ready(function() {
 // load
 	// $("header").load("index_header.html");
 	$("#puzzle").load("puzz.html");
+	$("footer").load("footer.html");
 
 // // full img
 // 	$(window).bind('load resize', function() {
@@ -15,6 +16,10 @@ $(document).ready(function() {
 // 		$("html, body").animate({scrollTop:top_rs},1000);
 // 		$("aside").stop().animate({top:top_rs},1000);
 // 	});
+
+if (document.body> 20 || document.documentElement.scrollTop > 20) {
+	$("header").css({'top' : '0px'});
+  }
 
 //Click event to scroll to top
 $('#a1').click(function(){
@@ -37,12 +42,12 @@ $('#a3').click(function(){
 	return false;
 });
 
-$('#a4').click(function(){
+$('#a4,#b4').click(function(){
 	$('html, body').animate({scrollTop : 2200},1200);
 	return false;
 });
 
-$('#a5').click(function(){
+$('#a5,#b5').click(function(){
 	$('html, body').animate({scrollTop : 2930},1200);
 	return false;
 });

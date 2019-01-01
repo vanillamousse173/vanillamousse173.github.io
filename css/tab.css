@@ -106,6 +106,17 @@
 	box-shadow: 2px 2px 8px #bc9b58;
 }
 
+/* .tri{
+    position: absolute;
+    top: 100%;
+	left: 50%;
+	margin-top: -90px;
+	margin-left: -80px;
+	border-width: 80px;
+    border-style: solid;
+	border-color: transparent transparent #fff transparent;
+} */
+
 #tab-demo>ul>li{ 
 	display:inline-block; 
 	vertical-align:top;

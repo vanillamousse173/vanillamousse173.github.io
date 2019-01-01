@@ -3,45 +3,60 @@
 <head>
 <meta charset="utf-8">
 <title>培養meme</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="shortcut icon" href="img/page.ico">
-    <link href="css/nav.css" rel="stylesheet" type="text/css">
-    <link href="css/rwd.css" rel="stylesheet" type="text/css">
     <link href="css/article.css" rel="stylesheet" type="text/css">    
 	<script type="text/javascript"src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript"src="js/nav.js"></script>
     <script type="text/javascript"src="js/article.js"></script>
+    <script type="text/javascript"src="js/swiper.js"></script>
 </head>
 
 <body>
-
-<header>        
-    <div id="logo">
-        <a href="index.html"><img src="img/logo.png"/></a>      
-    </div>
-    <div class="nav">
-        <button class="hamburger hamburger--elastic" type="button">
-            <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-            </span>
-        </button>    
-        <div id="menu">
-        <ul>
-            <li class="box col-m-4">Works</li>
-            <li class="box col-m-4">About</li>
-            <li class="box col-m-4">Character</li>
-            <li class="box col-m-4">Links</li>
-            <li class="box col-m-4">FAQ</li>
-            <li class="box col-m-4">Contact</li>
-        </ul>    
+    <header>    
+        <div class="nav">
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>    
+            <div id="menu">
+            <ul>
+                <a href="index.html/#s1"><li id="a1"></li></a>
+                <a href="index.html/#s2"><li id="a2"></li></a>
+                <a href="index.html/#s3"><li id="a3"></li></a>
+                <a href="index.html/#s4"><li id="a4"></li></a>
+                <a href="index.html/#s5"><li id="a5"></li></a>
+                <a href="index.html/#s6"><li id="a6"></li></a>
+                <a href="index.html/#s7"><li id="a7"></li></a>
+            </ul>    
+            </div>
+        </div>      
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png"/></a>      
         </div>
-    </div>
-     <a href="https://www.facebook.com/%E5%85%92%E8%8A%8B%E5%9C%93%E5%A4%AA%E9%83%8E-1999599493650425/" target="_blank"><div class="share"></div></a>      
-</header>
+            <a href="https://www.facebook.com/%E5%85%92%E8%8A%8B%E5%9C%93%E5%A4%AA%E9%83%8E-1999599493650425/" target="_blank"><div class="share"></div></a> 
+    </header>
 
 <section>
-    <div class="content">
-        <article>
+    <article>       
         <div class="title"><img src="img/P_Doge.png" alt="doge"></div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/article/doge1.png" alt="doge1"></div>
+                    <div class="swiper-slide"><a href="https://funnyjunk.com/funny_pictures/4755454/DOge/" target="_blank">
+                        <img src="img/article/doge2.png" alt="doge2"></a>
+                    </div>
+                    <div class="swiper-slide"><img src="img/article/doge3.jpg" alt="doge3"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+        </div>
+        <!-- article -->
         <h3>起源</h3>      
         <p>最受歡迎的動物meme非Doge莫屬。</p>
         <p>Doge一詞來自2005年美國的布偶秀「Homestar Runner」某個角色在拼Dog時的誤拼。此後，大家偶爾會為了好玩使用這個字來稱呼狗勾。</p>
@@ -61,11 +76,33 @@
         <p>然後然後，如果你之前聽說Kabosu已經過世的消息，不用擔心！那個只是愚人節的假消息！ 2018年8月13日牠的主人也在IG再度澄清：<br><br>「有太多關於Kabosu的假死消息了，但牠很好，現在就在我旁邊。 我不常po IG，但你可以上部落格看看牠和另外三隻貓最近過得如何，然後對假新聞一笑置之。」 </p>
         <p>由此可知，在假新聞鋪天蓋地襲來的時候，動動手指查證是很重要的啊！</p>
         <p>BTW，Kabosu是女生ㄛ。</p>
-        </article>
-    </div>
+    </article>
 </section>
 
-<aside></aside>
+<aside>
+    <div class="backtolist">
+        <a href="meme.html"><img src="img/memes.png" alt="memes"></a>
+    </div>
+    <div class="draw"><img src="img/for_meme.png" alt="meme"></div>
+</aside>
+
+<footer></footer>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 
 </body>
 

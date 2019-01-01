@@ -34,12 +34,13 @@ a{
 section{
 	position: relative;
 	width: 80%;
-	margin: 60px auto 120px;
+	margin: 60px auto 10px;
+	text-align: center;
 }
 
 .title{
-	width: 500px;
-	margin: 120px auto 0px;
+	width: 300px;
+	margin: 60px auto 0px;
 }
 
 .title img{
@@ -47,13 +48,13 @@ section{
 }
 
 .box{
+	width: 80%;
 	position: relative;
 	color: #fff;
 	display: inline-block;
 	box-sizing: border-box;
-	float: left;
 	text-align: center;
-	margin: 0;
+	margin: auto;
 	border-radius: 10px;
 	overflow: hidden;
 
@@ -90,6 +91,64 @@ section{
 
 .box h3{
 	box-sizing: border-box;
+	margin: 10px auto 20px;
 	padding: 0px 20px;
 	font-size: 18pt;
+	font-weight: normal;
+}
+
+.backtolist{
+	width: 300px;
+	margin: 0 auto 60px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+.backtolist p{
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.backtolist img{
+	width: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background-color: #fe5656;
+
+	-ms-transform:scale(1,1);	/* IE 9*/
+	-webkit-transform: scale(1,1);	/*Safari*/
+	transform: scale(1,1);	/*Standard syntax*/
+	
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;/*Safari*/
+
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
+}
+
+.backtolist img:hover{
+	-ms-transform: scale(1.2,1.2);	/* IE 9*/
+	-webkit-transform: scale(1.2,1.2);	/*Safari*/
+	transform: scale(1.2,1.2);	/*Standard syntax*/
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+	
+	.title{
+		width: 400px;
+	}
+	
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+
+	.title{
+		width: 500px;
+	}
+
 }

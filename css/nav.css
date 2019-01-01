@@ -223,10 +223,10 @@ header::after {
 }
 
 #menu li{	
-	margin: 40px;
+	margin: 10px;
 	padding: 0;
-	width: 150px;
-	height: 150px;	
+	width: 100px;
+	height: 100px;	
 	display: inline-block;
 	box-sizing: border-box;
 	border-radius: 50%;
@@ -256,10 +256,32 @@ header::after {
 }
 
 footer{
+	width: 100%;
+	margin: 0;
 	padding: 10px;
 	text-align: center;
 	font-size: 10pt;
 	color: #fff;
 	background: #fe5656;
 	font-weight: 300;
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+	#menu li{	
+		margin: 20px;
+		padding: 0;
+		width: 120px;
+		height: 120px;
+	}
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+	#menu li{	
+		margin: 40px;
+		padding: 0;
+		width: 150px;
+		height: 150px;
+	}
 }
