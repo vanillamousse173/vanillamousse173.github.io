@@ -5,7 +5,6 @@
 
 textarea:placeholder{
     content: "我也想跟小紅貓玩" ;
-    font-family: 'Noto Sans TC';
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -22,7 +21,6 @@ input[type=text], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    content:"Submit";
     background-color: #fe5656;
     color: white;
     padding: 12px 20px;
