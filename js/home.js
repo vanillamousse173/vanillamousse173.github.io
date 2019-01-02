@@ -22,6 +22,8 @@ if (document.body> 20 || document.documentElement.scrollTop > 20) {
   }
 
 //Click event to scroll to top
+//  $('#S2').offset().top
+
 $('#a1').click(function(){
 	$('html, body').animate({scrollTop : 0},1200);
 	return false;
@@ -38,27 +40,27 @@ $('#a2').click(function(){
 });
 
 $('#a3').click(function(){
-	$('html, body').animate({scrollTop : 1460},1200);
+	$('html, body').animate({scrollTop : 1420},1200);
 	return false;
 });
 
 $('#a4,#b4').click(function(){
-	$('html, body').animate({scrollTop : 2200},1200);
+	$('html, body').animate({scrollTop : 2120},1200);
 	return false;
 });
 
 $('#a5,#b5').click(function(){
-	$('html, body').animate({scrollTop : 2930},1200);
+	$('html, body').animate({scrollTop : 2850},1200);
 	return false;
 });
 
 $('#a6').click(function(){
-	$('html, body').animate({scrollTop : 3670},1200);
+	$('html, body').animate({scrollTop : 3500},1200);
 	return false;
 });
 
 $('#a7').click(function(){
-	$('html, body').animate({scrollTop : 4460},1200);
+	$('html, body').animate({scrollTop : 4160},1200);
 	return false;
 });
 
