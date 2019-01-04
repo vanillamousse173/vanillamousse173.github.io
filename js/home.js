@@ -7,6 +7,7 @@ $(document).ready(function() {
 	// $("header").load("index_header.html");
 	$("#puzzle").load("puzz.html");
 	$("footer").load("footer.html");
+	$(".introbox").load("intro.html");
 
 // // full img
 // 	$(window).bind('load resize', function() {
@@ -63,6 +64,16 @@ $('#a7').click(function(){
 	$('html, body').animate({scrollTop : 4160},1200);
 	return false;
 });
+
+$(".intro").eq(50).show();
+
+$(".tip").hover(function(){
+		
+	var _index = $(this).index();
+
+	$(".intro").eq(_index).show(2000).siblings().hide(2000);		
+	
+});	
 
 // // box event
 // $(".box").eq(0).addClass("ch_bg");
