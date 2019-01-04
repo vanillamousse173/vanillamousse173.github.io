@@ -7,10 +7,10 @@
 }
 
 .tip{
-	width: 12%;
+	width: 13%;
 	display: inline-block;
 	box-sizing: border-box;	
-	margin: 2px;
+	margin: 0.5px;
 	position: relative;
 }
 
@@ -68,11 +68,34 @@
     border-color: #fe5656 transparent transparent transparent;
 }
 
+.introbox{
+    position:relative;
+	width:80%;
+    background: #fff;
+    color: #000;
+	margin: 20px auto 0;
+	padding:10px 30px; 
+    border-radius: 10px;
+    /* position:relative;
+	width:480px;
+	background:#ddd; */
+}
+
+.intro{
+    width:100%;
+    color: #000;
+    position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+
 /*for tablets*/
 @media only screen and (min-width: 768px) {
     
     .tip{
         width: 11%;
+        margin: 2px;
     }
 }
 
@@ -81,5 +104,6 @@
     
     .tip{
         width: 12%;
+        margin: 2px;
     }
 }

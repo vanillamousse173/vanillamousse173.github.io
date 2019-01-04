@@ -282,6 +282,14 @@ h3{
 	align-items: center;
 }
 
+#form{
+	display: block;
+	border-radius:10px; 
+	width: 80%;
+	height: 350px;
+	margin: 20px auto 0;
+}
+
 /*for tablets*/
 @media only screen and (min-width: 768px) {
 	

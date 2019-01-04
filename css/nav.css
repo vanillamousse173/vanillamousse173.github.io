@@ -28,12 +28,12 @@ header::after {
 
 
 #logo{
-	height: 80px;
+	width: 40%;
 	margin: 0 auto;
 }
 
 #logo img{
-	height: 100%;
+	width: 100%;
 }
 
 .share{
@@ -73,7 +73,7 @@ header::after {
 	text-transform: none;
 	background-color: transparent;
 	border: 0;
-	margin-left: 20px;
+	margin-left: 0;
 	overflow: visible; 
 }
 
@@ -269,6 +269,14 @@ footer{
 
 /*for tablets*/
 @media only screen and (min-width: 768px) {
+	#logo{
+		width: 30%;
+	}
+		
+	.hamburger {
+		margin-left: 20px;
+	}
+	
 	#menu li{	
 		margin: 20px;
 		padding: 0;
@@ -279,6 +287,10 @@ footer{
 
 /*for desktop*/
 @media only screen and (min-width: 1200px) {
+	#logo{
+		width: 15%;
+	}
+
 	#menu li{	
 		margin: 40px;
 		padding: 0;
