@@ -72,9 +72,9 @@
     position:relative;
 	width:80%;
     background: #fff;
-    color: #000;
+    color: #000;    
+    padding:10px 30px;
 	margin: 20px auto 0;
-	padding:10px 30px; 
     border-radius: 10px;
     /* position:relative;
 	width:480px;
@@ -84,10 +84,11 @@
 .intro{
     width:100%;
     color: #000;
-    position:absolute;
+    /* position:absolute;
 	left:0;
-	top:0;
-	display:none;
+    top:0; */
+    display: none;
+    text-align: center;
 }
 
 /*for tablets*/
