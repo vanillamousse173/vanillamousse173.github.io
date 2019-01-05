@@ -2,31 +2,25 @@
 /* CSS Document */
 
 /*tab*/
-#tab-demo{ 
-	width:80%;
-	margin:auto;
-	text-align: center;
-}
-#tab-demo>ul{ 
-	margin: auto;
-	list-style:none;
-}
 
 .tab-title{
-	width: 80%;
+	width: 100%;
 	list-style:none;
-	position: relative;
-	padding: 0;
+	text-align: center;
 }
 
 #c1,#c2,#c3,#c4{
+	display:inline-block; 
+	padding:10px;
+	list-style:none; 
+	box-sizing:border-box;
+	margin:5px;
 	cursor: pointer;
 	background-position: 0px,0px;
 	background-size: 200%;
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
-	margin: 10px 10px 0px 10px;
 	
 	-ms-transform:scale(1,1);	/* IE 9*/
 	-webkit-transform: scale(1,1);	/*Safari*/
@@ -41,7 +35,7 @@
 }
 
 #c1{
-	background: url(../img/momo.jpg) no-repeat;
+	background: url(../img/momo.png) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
 }
@@ -58,7 +52,7 @@
 }
 
 #c2{
-	background: url(../img/clam.jpg) no-repeat;
+	background: url(../img/clam.png) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
 }
@@ -92,7 +86,7 @@
 }
 
 #c4{
-	background: url(../img/RRC.jpg) no-repeat;
+	background: url(../img/RRC.png) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
 }
@@ -119,28 +113,21 @@
 	border-color: transparent transparent #fff transparent;
 } */
 
-#tab-demo>ul>li{ 
-	display:inline-block; 
-	vertical-align:top;
-	padding:10px;
-	list-style:none; 
-	box-sizing:border-box;
-}
-#tab-demo>ul>li a{ 
-	color:#000; 
-	text-decoration:none;
-}
-
-
-#tab-demo>.tab-inner{ 
-	clear:both; 
-	background: #fff;
-	margin-top: 20px;
-	padding:10px 30px; 
+.tab-inner{ 
 	width: 100%;
 	border-radius: 10px;
+	margin: auto;
+	text-align: center;
+	transform: translateY(20%);
 }
 
+.tab-inner p{ 
+	text-align: center;
+}
+
+.ch_bg{
+	background-color: #fe5656;
+}
 
 /* #tab-demo>.tab-inner:nth-child(2n){
 	border-color: #fe5656;
@@ -150,14 +137,11 @@
 @media only screen and (min-width: 768px) {
 	
 	#c1,#c2,#c3,#c4{
-		width: 120px;
-		height: 120px;
+		width: 100px;
+		height: 100px;
 		margin: 15px 15px 0px 15px;
 	}
 
-	.tab-title{
-		width: 100%;
-	}
 }
 
 /*for desktop*/
@@ -166,7 +150,7 @@
 	#c1,#c2,#c3,#c4{
 		width: 150px;
 		height: 150px;
-		margin: 10px 20px 10px 20px;
+		margin: 10px 20px;
 	}
 }
 

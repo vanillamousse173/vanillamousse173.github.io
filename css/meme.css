@@ -38,9 +38,13 @@ section{
 	text-align: center;
 }
 
+header {
+	top: 0px;
+}
+
 .title{
 	width: 300px;
-	margin: 60px auto 0px;
+	margin: 120px auto 0px;
 }
 
 .title img{
