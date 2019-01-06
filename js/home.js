@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 // load
 	// $("header").load("index_header.html");
-	$("#puzzle").load("puzz.html");
+	// $("#puzzle").load("puzz.html");
 	$("footer").load("footer.html");
 	$(".introbox").load("intro.html");
 
@@ -78,16 +78,18 @@ $('#a7').click(function(){
 	return false;
 });
 
-$('.intro').eq(49).show();
+$('.intro').eq(0).show();
 
+console.log('hi 83');
 $('.tip').hover(function(){
-		
+	console.log('.tip hover');
 	var _index = $(this).index();
+	console.log(_index);
 
 	$('.intro').eq(_index).show(2000).siblings().hide(2000);		
 	
 });	
-
+console.log('hi 92');
 
 
 });
