@@ -109,21 +109,21 @@ h3{
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    background-color: #fe5656;
-    width: 200px;
+    background-color: #056;
+    width: 300px;
     color: #fff;
-    text-align: left;
+    text-align: justify;
     font-size: 10pt;
     line-height: 18pt;
-	letter-spacing: 2px;
     border-radius: 5px;
-	padding: 5px 6px;
+	padding: 5px 8px;
     position: absolute;
     z-index: 1000;
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    font-weight: 300;
+	font-weight: 300;
+	box-shadow: 2px 2px 8px #bc9b58;
 }
 
 .tooltip .tooltiptext::after {
@@ -134,7 +134,18 @@ h3{
 	margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #fe5656 transparent transparent transparent;
+	border-color: #056 transparent transparent transparent;
+}
+
+.tooltiptext a{
+	text-decoration: none;
+	border-bottom: dotted 2px #fe5656;
+	color: #fff;
+}
+
+.tooltiptext a:hover{
+	text-decoration: none;
+	color:#fe5656;
 }
 
 .tooltip:hover{
@@ -238,6 +249,10 @@ h3{
 	color: #fff;
 }
 
+.imgtext::after{
+	content: " "url(../img/external-link-symbol.png);
+}
+
 .swiper-slide:hover .imgtext{
 	opacity: 0.7;
 	-webkit-transition: 0.5s ease; /*Safari*/
@@ -253,10 +268,6 @@ h3{
 .swiper-slide > img {
 	width: auto;
 	height: 100%;
-}
-
-.imgtext::after{
-	content: " "url(../img/external-link-symbol.png);
 }
 
 /*for tablets*/

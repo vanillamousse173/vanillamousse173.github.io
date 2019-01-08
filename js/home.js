@@ -5,9 +5,7 @@ $(document).ready(function() {
 
 // load
 	// $("header").load("index_header.html");
-	// $("#puzzle").load("puzz.html");
 	$("footer").load("footer.html");
-	$(".introbox").load("intro.html");
 
 // // full img
 // 	$(window).bind('load resize', function() {
@@ -80,16 +78,12 @@ $('#a7').click(function(){
 
 $('.intro').eq(0).show();
 
-console.log('hi 83');
 $('.tip').hover(function(){
-	console.log('.tip hover');
 	var _index = $(this).index();
-	console.log(_index);
 
-	$('.intro').eq(_index).show(2000).siblings().hide(2000);		
+	$('.intro').eq(_index).slideDown(200).siblings().slideUp(200);		
 	
 });	
-console.log('hi 92');
 
 
 });
