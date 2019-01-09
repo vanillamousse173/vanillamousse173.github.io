@@ -69,31 +69,40 @@ section{
 	background-image: url(../img/wave3.png);
 } */
 
-article,.home{
-	width: 80%;
+article{
+	width: 90%;
 	margin: 60px auto;
 	scroll-behavior: smooth;
 }
 
-.home img{
+.logotitle{
 	position: absolute;
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	z-index: 10;
+	width: 60%;
+	top: 10%;
+	left: 10%;
 }
 
-.home p{
-	position: absolute;
-	top: 30%;
-	left:10%;
+.logotitle img{
+	position: relative;
+	width: 100%;
+}
+
+.logotitle p{
 	font-size: 12pt;
 }
 
+#home{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* 箭頭 */
 .wraparrow{
 	position :absolute;
-	left:60%;
-	top: 60%;
+	left:5%;
+	bottom: 20%;
 }
 
 .wraparrow2{
@@ -111,12 +120,12 @@ article,.home{
 .downarrow, .leftarrow {
 	width : 0 ; 
 	height : 0 ;
-	margin: 0;
+	margin: 0 5px;
 	border-width : 16px ;
 	border-style :solid;
 	border-color :transparent transparent  #fe5656  transparent;
 	transform: ;
-	display: block;
+	display: inline-block;
 	box-sizing: border-box;
 	transform: rotate(-180deg) scaleX(0.6);
 }
@@ -150,8 +159,8 @@ article,.home{
 }
 
 @keyframes line{
-  0% {height: 0px; top:350px;}
-  50% {height: 250px; top: 5px;}
+  0% {height: 0px; top:550px;}
+  50% {height: 450px; top: 5px;}
   100% {height: 0px; top: 5px;}
 }
 
@@ -191,8 +200,8 @@ h3{
 }
 
 .work{
-	margin: 40px auto 0;
 	width: 60%;
+	margin: 40px auto 0;
 }
 
 .work img{
@@ -201,9 +210,8 @@ h3{
 }
 
 #memebtn,#projectbtn{
-	margin: auto;
-	width: 80%;
-	position: relative;
+	position: relative;	
+	padding:10px;
 }
 
 #memebtn p,#projectbtn p{
@@ -214,6 +222,7 @@ h3{
 }
 
 #memebtn img,#projectbtn img{
+	width: 100%;
 	-ms-transform:scale(1,1);	/* IE 9*/
 	-webkit-transform: scale(1,1);	/*Safari*/
 	transform: scale(1,1);	/*Standard syntax*/
@@ -293,30 +302,29 @@ h3{
 /*for tablets*/
 @media only screen and (min-width: 768px) {
 	
+	article,.home{
+		width: 80%;
+	}
+
 	#s1{
 		height: 600px;
 	}
 
-	#s1 p{
+	.logotitle{
+		position: absolute;
+		width: 35%;
 		top: 20%;
-		left: 20%;
+		left: 10%;
 	}
 
 	.work{
-		margin: 40px auto 0;
 		width: 80%;
-		display: flex;
-		justify-content: space-around;
 	}
-	
-	.work img{
-		width: 100%;
-		border-radius: 10px;
-	}
-	
+
 	#memebtn,#projectbtn{
-		width: 40%;
+		padding:0 20px;
 	}
+	
 }
 
 /*for desktop*/
@@ -326,12 +334,12 @@ h3{
 		height: 750px;
 	}
 
-	#s1 p{
-		top: 25%;
-		left: 35%;
+	.work{
+		width: 60%;
+	}
+
+	#memebtn,#projectbtn{
+		padding:0 60px;
 	}
 	
-	#memebtn,#projectbtn{
-		width: 25%;
-	}
 }

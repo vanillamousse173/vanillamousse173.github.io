@@ -28,8 +28,9 @@ header::after {
 
 
 #logo{
-	width: 40%;
-	margin: 0 auto;
+	max-width: 200px;
+	min-width: 70px;
+	margin: 10px auto 0;
 }
 
 #logo img{
@@ -265,13 +266,11 @@ footer{
 	color: #fff;
 	background: #fe5656;
 	font-weight: 300;
+	position: absolute;
 }
 
 /*for tablets*/
 @media only screen and (min-width: 768px) {
-	#logo{
-		width: 30%;
-	}
 		
 	.hamburger {
 		margin-left: 20px;
@@ -287,9 +286,6 @@ footer{
 
 /*for desktop*/
 @media only screen and (min-width: 1200px) {
-	#logo{
-		width: 15%;
-	}
 
 	#menu li{	
 		margin: 40px;

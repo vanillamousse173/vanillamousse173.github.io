@@ -3,58 +3,124 @@
 <head>
 <meta charset="utf-8">
 <title>培養meme</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="shortcut icon" href="img/page.ico">
-    <link href="css/nav.css" rel="stylesheet" type="text/css">
-    <link href="css/rwd.css" rel="stylesheet" type="text/css">
     <link href="css/article.css" rel="stylesheet" type="text/css">    
 	<script type="text/javascript"src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript"src="js/nav.js"></script>
     <script type="text/javascript"src="js/article.js"></script>
+    <script type="text/javascript"src="js/swiper.js"></script>
 </head>
 
 <body>
-
-<header>    
-    <div class="nav">
-        <button class="hamburger hamburger--elastic" type="button">
-            <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-            </span>
-        </button>    
-        <div id="menu">
-        <ul>
-            <a href="index.html#2"><li class="box col-m-4">Works</li></a>
-            <a href="index.html#3"><li class="box col-m-4">About</li></a>
-            <a href="index.html#4"><li class="box col-m-4">Character</li></a>
-            <a href="index.html#5"><li class="box col-m-4">Links</li></a>
-            <a href="index.html#6"><li class="box col-m-4">FAQ</li></a>
-            <a href="index.html#7"><li class="box col-m-4">Contact</li></a>
-        </ul>    
+    <header>    
+        <div class="nav">
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>    
+            <div id="menu">
+            <ul>
+                <a href="index.html/#s1"><li id="a1"></li></a>
+                <a href="index.html/#s2"><li id="a2"></li></a>
+                <a href="index.html/#s3"><li id="a3"></li></a>
+                <a href="index.html/#s4"><li id="a4"></li></a>
+                <a href="index.html/#s5"><li id="a5"></li></a>
+                <a href="index.html/#s6"><li id="a6"></li></a>
+                <a href="index.html/#s7"><li id="a7"></li></a>
+            </ul>    
+            </div>
+        </div>      
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png"/></a>      
         </div>
-    </div>      
-    <div id="logo">
-        <a href="index.html"><img src="img/logo.png"/></a>      
-    </div>
-     <a href="https://www.facebook.com/%E5%85%92%E8%8A%8B%E5%9C%93%E5%A4%AA%E9%83%8E-1999599493650425/" target="_blank"><div class="share"></div></a> 
- </header>
+            <a href="https://www.facebook.com/%E5%85%92%E8%8A%8B%E5%9C%93%E5%A4%AA%E9%83%8E-1999599493650425/" target="_blank"><div class="share"></div></a> 
+    </header>
 
 <section>
-        <article>
-        <div class="title"><img src="img/P_Pepe.png" alt="doge"></div>
+    <article>       
+        <div class="title"><img src="img/P_Doge.png" alt="doge"></div>
+        <p id="centerline">「hey Pepe- i heard you pull yer pants down all the way to go pee.」</p>
+        <!-- Swiper -->
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/article/pepe1.jpg" alt="pepe1">
+                        <a href="https://knowyourmeme.com/memes/feels-good-man" target="_blank">
+                        <p class="imgtext">Know Your Meme</p></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/article/pepe2.jpg" alt="pepe2">
+                        <a href="https://www.amazon.com/Boys-Club-Matt-Furie/dp/1606999192" target="_blank">                        
+                        <p class="imgtext">amazon</p></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/article/pepe3.jpg" alt="pepe3">
+                        <a href="https://knowyourmeme.com/photos/1148-feels-good-man" target="_blank">                        
+                        <p class="imgtext">Know Your Meme</p></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/article/pepe4.png" alt="pepe4">
+                        <a href="http://mattfurie.tumblr.com/post/171696321352" target="_blank">
+                        <p class="imgtext">Tumblr/Matt Furie</p></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/article/pepe5.png" alt="pepe5">
+                        <a href="https://cheezburger.com/8575118336/political-memes-donald-trump-tweets-pepe-trump" target="_blank">
+                        <p class="imgtext">CHEEZburger/Memebase</p></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/article/pepe6.jpg" alt="pepe6">
+                        <a href="https://www.theverge.com/2017/5/8/15577340/pepe-the-frog-is-dead-matt-furie" target="_blank">
+                        <p class="imgtext">THE VERGE(作者原帖已刪除)</p></a>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+        </div>
+        <!-- article -->
         <h3>起源</h3>      
-        <p>2006年，插畫家Matt Furie出版了一本描述四位懶惰室友的漫畫Boy's Club，但這四位主角並不是人，而是四隻<span class="tooltip">有著動物臉、人身體的生物<span class="tooltiptext">有點像獸人。</span></span>。他們過著吃零食、喝可樂，並且盡做一些滑稽事的荒謬生活，而有著青蛙臉的Pepe，就是我們這次介紹的主角。</p>
+        <p>2006年，插畫家Matt Furie出版了一本描述四位懶惰室友的漫畫Boy's Club，但這四位主角並不是人，而是四隻有著動物臉、人身體的生物。他們過著吃零食、喝可樂，並且盡做一些滑稽事的荒謬生活，而有著青蛙臉的Pepe，就是我們這次介紹的主角。</p>
         <h3>散佈</h3>
-        <p>雖然漫畫在2006年出版，但Pepe紅起來是到了2008年。當時，有人在<span class="tooltip">4chan<span class="tooltiptext">美國貼圖討論版網站</span></span>。上張貼了一張Pepe的經典圖。圖中Pepe脫掉褲子小便，被一位室友無意間看見後，告訴了另一位室友，因此Pepe被嘲笑說，「聽說你都脫掉褲子小便喔！」（hey Pepe- i heard you pull yer pants down all the way to go pee.），沒想到Pepe卻回了「Feels good man.」（感覺很好ㄛ）。</p>
-        <h3>名人愛用梗圖</h3>
-        <p>至此之後，Pepe衍生出許多分支（除了Feels good man 還有sad frog、rare pepe等等），且不只被網友大量使用，也為明星、政治人物的推特所轉發過，甚至擁有自己的Tumblur部落格PepeTheFrogBlog。</p>
+        <p>雖然漫畫在2006年出版，但Pepe紅起來卻是2008年。當時，有人在<span class="tooltip">4chan<span class="tooltiptext">美國ACG貼圖討論版網站。</span></span>上張貼了一張Pepe的經典圖。圖中Pepe脫掉褲子小便，被一位室友無意間看見後，告訴了另一位室友，因此Pepe被嘲笑說，「聽說你都脫掉褲子尿尿喔！」，沒想到Pepe卻回了「Feels good man.」（感覺很好ㄛ）。</p>        
+        <p>至此之後，Pepe衍生出許多<span class="tooltip">分支<span class="tooltiptext">除了Feels good man 還有sad frog、rare pepe等等。</span></span>，不只被網友大量使用，也為明星、政治人物的推特所轉發過，甚至擁有自己的Tumblur部落格PepeTheFrogBlog。</p>
+        <h3>網路仇恨符號</h3>
         <p>但在2016年，卻因為有人意圖將其用以宣傳白人民族主義、反猶太主義，在Twitter上大量散播，並與美國共和黨總統候選人川普做連結，使其被宣布為網絡仇恨符號。</p>
-        <h3>R.I.P.（？</h3>
+        <h3>賜死事件</h3>
         <p>2017年5月6日，作者Matt Furie發表了Pepe躺在棺材裡的漫畫，當天多家媒體報導作者「賜死」了該名角色。6月底時，作者發起「Save Pepe」群眾募資，想透過此種方式使Pepe不再與右派色彩掛勾。</p>
         <p>雖然被官方賜死了，但Pepe很明顯在網路上還活得很好R。</p>
-        </article>
+    </article>
 </section>
 
-<aside></aside>
+    <div class="backtolist">
+        <a href="meme.html"><img src="img/btn_backtomemes.png" alt="memes"></a>
+    </div>
+    <div class="draw"><img src="img/for_meme.png" alt="meme"></div>
+
+<footer></footer>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // 設定iframe的寬度為 寬:高，16:9
+    document.querySelectorAll('.swiper-slide > iframe').forEach( (iframe) => {
+        iframe.style.width = `${swiper.height/9*16}px`;
+    });
+</script>
 
 </body>
 

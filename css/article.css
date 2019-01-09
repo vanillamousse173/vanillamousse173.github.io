@@ -40,7 +40,7 @@ section{
 
 article{
 	width:80%;
-	margin: 60px auto;
+	margin: 60px auto 180px;
 	scroll-behavior: smooth;
 }
 
@@ -157,20 +157,19 @@ h3{
 }
 
 .backtolist{
-	position: fixed;
-	right: 50px;
-	bottom:50px;
-	width: 80px;
+	width: 120px;
+	position: absolute;
+	right: 50%;
+	transform: translateX(50%);
+	bottom: 80px;
 	display: inline-block;
 	box-sizing: border-box;
-	z-index: 21;
-
 }
 
 .backtolist img{
 	width: 100%;
-	border-radius: 50%;
-	margin: 10px 5px;
+	padding: 10px 5px;
+	border-radius:5px; 
 	background-color: #fe5656;
 
 	-ms-transform:scale(1,1);	/* IE 9*/
@@ -185,6 +184,7 @@ h3{
 }
 
 .backtolist img:hover{
+	box-shadow: 2px 2px 8px #bc9b58;
 	-ms-transform: scale(1.2,1.2);	/* IE 9*/
 	-webkit-transform: scale(1.2,1.2);	/*Safari*/
 	transform: scale(1.2,1.2);	/*Standard syntax*/
@@ -196,11 +196,12 @@ h3{
 	left: 0;
 	margin-bottom: 0px;
 	padding: 0;
-	height: 300px;
+	display: none;
+	z-index: 20;
 }
 
 .draw img{
-	height: 100%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -274,11 +275,21 @@ h3{
 @media only screen and (min-width: 768px) {
 	article{
 		width:60%;
+		margin-bottom: 150px;
+	}
+
+	.backtolist{
+		transform: initial;
+		width: 120px;
+		position: fixed;
+		right: 3%;
 	}
 
 	.draw{		
+		display: block;
 		position: fixed;
-		height: 300px;
+		width:20%;
+		margin-bottom: -8px;
 	}
 }
 
@@ -288,7 +299,9 @@ h3{
 		width:50%;
 	}
 
-	.draw{
-		height: 400px;
+	.backtolist{
+		width: 150px;
+		right: 5%;
 	}
+
 }

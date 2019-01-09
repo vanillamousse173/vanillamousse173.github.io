@@ -146,18 +146,10 @@ header {
 	border-radius: 5px;
 }
 
-.backtolist p{
+.backtolist{
 	color: #fff;
-	margin: 0;
-	padding: 0;
-}
-
-.backtolist img{
-	width: 80px;
-	width: 80px;
-	border-radius: 50%;
-	background-color: #fe5656;
-
+	margin: 0 auto 60px;
+	padding: 10px;
 	-ms-transform:scale(1,1);	/* IE 9*/
 	-webkit-transform: scale(1,1);	/*Safari*/
 	transform: scale(1,1);	/*Standard syntax*/
@@ -169,10 +161,17 @@ header {
 	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
 }
 
-.backtolist img:hover{
-	-ms-transform: scale(1.2,1.2);	/* IE 9*/
-	-webkit-transform: scale(1.2,1.2);	/*Safari*/
-	transform: scale(1.2,1.2);	/*Standard syntax*/
+.backtolist img{
+	width: 100%;
+}
+
+.backtolist:hover{
+	background-color: #fe5656;
+	box-shadow: 2px 2px 8px #141414;
+	border-radius: 10px;
+	-ms-transform: scale(1.1,1.1);	/* IE 9*/
+	-webkit-transform: scale(1.1,1.1);	/*Safari*/
+	transform: scale(1.1,1.1);	/*Standard syntax*/
 }
 
 /*for tablets*/
