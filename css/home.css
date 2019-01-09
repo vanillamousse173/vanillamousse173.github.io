@@ -170,12 +170,16 @@ article{
 	100% {width: 0px; left: 5px;}
   }
 
-.title{
+.title,.titleup{
 	width: 300px;
 	margin: 60px auto 0;
 }
 
-.title img{
+.titleup{
+	margin: 0 auto;
+}
+
+.title img,.titleup img{
 	width: 100%;	
 }
 
@@ -328,6 +332,11 @@ h3{
 
 	#memebtn,#projectbtn{
 		padding:0 20px;
+	}
+
+	.titleup{
+		width: 300px;
+		margin: 60px auto 0;
 	}
 	
 }

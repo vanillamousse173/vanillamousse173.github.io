@@ -149,7 +149,7 @@ header::after {
 #menu ul{
 	margin: auto;
 	padding: 0;
-	width: 80%;	
+	width: 100%;	
 	text-align: center;
 }
 
@@ -276,6 +276,10 @@ footer{
 		margin-left: 20px;
 	}
 	
+	#menu ul{
+		width: 80%;
+	}
+
 	#menu li{	
 		margin: 20px;
 		padding: 0;
@@ -288,9 +292,13 @@ footer{
 @media only screen and (min-width: 1200px) {
 
 	#menu li{	
-		margin: 40px;
+		margin: 20px;
 		padding: 0;
 		width: 150px;
 		height: 150px;
+	}
+
+	#menu ul{
+		width: 70%;
 	}
 }
