@@ -22,7 +22,7 @@ window.onscroll = function() {scrollFunction()};
 	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		$("header").css({'top' : '0px'});
 	  } else {
-		$("header").css({'top' : '-100px'});
+		$("header").css({'top' : '-105px'});
 	  }
 	};
 
@@ -33,16 +33,17 @@ window.onscroll = function() {scrollFunction()};
 		$(".hamburger").removeClass("is-active");
 	});
 
+	// Click event to scroll to top
 	$(function(){
         $('a[href*="#"]').on('click', function (e) {
             e.preventDefault();
             $('html, body').animate({
-                    scrollTop: $($(this).attr('href')).offset().top - 50
+                    scrollTop: $($(this).attr('href')).offset().top - 80
                 }, 500, 'linear');
         });
     });
 
-//Click event to scroll to top
+
 //  $('#S2').offset().top
 
 // $('#a1').click(function(){

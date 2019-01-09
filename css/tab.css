@@ -44,12 +44,14 @@
 	background:url(../img/momo.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
+	background-color: #fe5656;
 	
 	-ms-transform: scale(1.1,1.1);	/* IE 9*/
 	-webkit-transform: scale(1.1,1.1);	/*Safari*/
 	transform: scale(1.1,1.1);	/*Standard syntax*/
 	box-shadow: 2px 2px 8px #bc9b58;
 }
+
 
 #c2{
 	background: url(../img/clam.png) no-repeat;
@@ -61,6 +63,7 @@
 	background:url(../img/clam.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
+	background-color: #fe5656;
 
 	-ms-transform: scale(1.1,1.1);	/* IE 9*/
 	-webkit-transform: scale(1.1,1.1);	/*Safari*/
@@ -78,6 +81,7 @@
 	background:url(../img/mush.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
+	background-color: #fe5656;
 
 	-ms-transform: scale(1.1,1.1);	/* IE 9*/
 	-webkit-transform: scale(1.1,1.1);	/*Safari*/
@@ -95,6 +99,7 @@
 	background:url(../img/RRC.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
+	background-color: #fe5656;
 
 	-ms-transform: scale(1.1,1.1);	/* IE 9*/
 	-webkit-transform: scale(1.1,1.1);	/*Safari*/
