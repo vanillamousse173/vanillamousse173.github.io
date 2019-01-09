@@ -44,7 +44,7 @@ header {
 }
 
 .title{
-	width: 300px;
+	width: 50%;
 	margin: 120px auto 0px;
 }
 
@@ -52,7 +52,11 @@ header {
 	width: 100%;
 }
 
-.box{
+/* .meme-container{
+	margin-top: 60px;
+} */
+
+.box,.lock{
 	width: 80%;
 	position: relative;
 	color: #fff;
@@ -62,7 +66,9 @@ header {
 	margin: auto;
 	border-radius: 10px;
 	overflow: hidden;
+}
 
+.box{
 	-ms-transform:scale(1,1);	/* IE 9*/
 	-webkit-transform: scale(1,1);	/*Safari*/
 	transform: scale(1,1);	/*Standard syntax*/
@@ -89,15 +95,16 @@ header {
 	padding: 0;
 }
 
-.box img{
+.box img,.lock img{
 	width: 100%;
 	border-radius: 10px;
 }
 
-.box h3{
+.box h3,.lock h3{
 	box-sizing: border-box;
-	margin: 10px auto 20px;
+	margin: 20px auto 15px;
 	padding: 0px 20px;
+	line-height: 20pt;
 	font-size: 18pt;
 	font-weight: normal;
 }
@@ -109,6 +116,34 @@ header {
 	align-items: center;
 	display: flex;
 	justify-content: space-around;
+}
+
+.fadebox{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%); /*IE 9*/
+	-webkit-transform: translate(-50%, -50%); /*Safari*/
+	transform: translate(-50%, -50%);
+	z-index: 50;
+	opacity: 0;
+}
+
+.lock:hover img{
+	-webkit-filter: brightness(50%); /*Safari*/
+	filter: brightness(50%);
+}
+
+.lock:hover .fadebox{
+	opacity: 1;
+}
+
+.linktext{
+	font-size: 12pt;
+	display: block;
+	padding: 8px 20px;
+	background: #fe5656;
+	border-radius: 5px;
 }
 
 .backtolist p{
@@ -144,7 +179,20 @@ header {
 @media only screen and (min-width: 768px) {
 	
 	.title{
-		width: 400px;
+		width: 35%;
+	}
+
+	.box h3,.lock h3{
+		min-height: 2.5em;
+	}
+
+	.fadebox{
+		top: 30%;
+	}
+
+	.linktext{
+	font-size: 12pt;
+	padding: 8px 5px;
 	}
 	
 }
@@ -153,7 +201,15 @@ header {
 @media only screen and (min-width: 1200px) {
 
 	.title{
-		width: 500px;
+		width: 30%;
 	}
 
+	.fadebox{
+		top: 35%;
+	}
+
+	.linktext{
+	font-size: 14pt;
+	padding: 16px 20px;
+	}
 }
