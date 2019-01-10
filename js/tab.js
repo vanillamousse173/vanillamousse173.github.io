@@ -8,7 +8,7 @@ $(document).ready(function() {
             $li.click(function(){
 
             $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
-                        // $(this).addClass("ch_bg").siblings().removeClass("ch_bg");
+            // $(this).addClass("ch_bg").siblings().removeClass("ch_bg");
         });
     });
     
