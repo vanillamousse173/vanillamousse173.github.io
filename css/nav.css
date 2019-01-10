@@ -5,7 +5,7 @@
 header {
     position: fixed;
     z-index: 1000;
-    top: -100px;
+    top: -105px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +160,7 @@ header::after {
 #a1:hover{
 	background: url(../img/title/btn_home_h.png) no-repeat;
 	background-size: 80%;
-	background-position: 18px,35px;
+	background-position: 10px,35px;
 }
 
 #a2{
@@ -170,7 +170,7 @@ header::after {
 #a2:hover{
 	background: url(../img/title/btn_works_h.png) no-repeat;
 	background-size: 80%;
-	background-position: 18px,35px;
+	background-position: 10px,35px;
 }
 
 #a3{
@@ -180,7 +180,7 @@ header::after {
 #a3:hover{
 	background: url(../img/title/btn_about_h.png) no-repeat;
 	background-size: 80%;
-	background-position: 18px,35px;
+	background-position: 10px,35px;
 }
 
 #a4{
@@ -190,7 +190,7 @@ header::after {
 #a4:hover{
 	background: url(../img/title/btn_character_h.png) no-repeat;
 	background-size: 80%;
-	background-position: 18px,35px;
+	background-position: 10px,35px;
 }
 
 #a5{
@@ -200,7 +200,7 @@ header::after {
 #a5:hover{
 	background: url(../img/title/btn_links_h.png) no-repeat;
 	background-size: 80%;
-	background-position: 18px,35px;
+	background-position: 10px,35px;
 }
 
 #a6{
@@ -210,7 +210,7 @@ header::after {
 #a6:hover{
 	background: url(../img/title/btn_faq_h.png) no-repeat;
 	background-size: 80%;
-	background-position: 18px,35px;
+	background-position: 10px,35px;
 }
 
 #a7{
@@ -220,7 +220,7 @@ header::after {
 #a7:hover{
 	background: url(../img/title/btn_contact_h.png) no-repeat;
 	background-size: 80%;
-	background-position: 18px,35px;
+	background-position: 10px,35px;
 }
 
 #menu li{	
@@ -233,7 +233,7 @@ header::after {
 	border-radius: 50%;
 	text-align: center;
 	background-size: 80%;
-	background-position: 18px,35px;
+	background-position: 10px,35px;
 
 	-ms-transform:scale(1,1);	/* IE 9*/
 	-webkit-transform: scale(1,1);	/*Safari*/
@@ -296,9 +296,14 @@ footer{
 		padding: 0;
 		width: 150px;
 		height: 150px;
+		background-position: 18px,35px;
 	}
 
 	#menu ul{
 		width: 70%;
+	}
+
+	#a1:hover,#a2:hover,#a3:hover,#a4:hover,#a5:hover,#a6:hover,#a1:hover{
+		background-position: 18px,35px;
 	}
 }
