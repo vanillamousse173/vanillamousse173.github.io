@@ -45,7 +45,8 @@ article{
 }
 
 .title{
-	width: 400px;
+	min-width: 200px;
+	max-width: 400px;
 	margin: 120px auto 0;
 }
 
