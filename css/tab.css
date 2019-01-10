@@ -41,7 +41,7 @@
 }
 
 #c1:hover{
-	background-image:url(../img/momo.gif) no-repeat;
+	background:url(../img/momo.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
 	background-color: #fe5656;
@@ -60,7 +60,7 @@
 }
 
 #c2:hover{
-	background-image:url(../img/clam.gif) no-repeat;
+	background:url(../img/clam.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
 	background-color: #fe5656;
@@ -78,7 +78,7 @@
 }
 
 #c3:hover{
-	background-image:url(../img/mush.gif) no-repeat;
+	background:url(../img/mush.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
 	background-color: #fe5656;
@@ -96,7 +96,7 @@
 }
 
 #c4:hover{
-	background-image:url(../img/RRC.gif) no-repeat;
+	background:url(../img/RRC.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
 	background-color: #fe5656;
