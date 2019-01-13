@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/Links.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript"src="js/Link.js"></script>
+    <title>Test</title>
+    <!-- <style>
+        #myPuzzle {
+            width: 500px;
+        }
+        img {
+            margin: 5px;
+            box-sizing: border-box;
+            width: 12%;
+        }
+        img:hover {
+            transform: scale(1.1,1.1);
+            transition: all 1s;
+        }
+    </style> -->
+</head>
+<body>
+    <p>Hi</p>
+    <div id="myPuzzle"></div>
+    <!-- <script type="text/javascript">
+        var canvas = document.createElement('canvas'),
+            ctx = canvas.getContext('2d'),
+            img = new Image();
+        img.onload = split_img;
+        let row = 7;
+        let col = 7;
+        function split_img() {
+            let w = img.width / col;
+            let h = img.height / row;
+            let i = 0;
+            for (let r=0; r<row; r++) {
+                for (let c=0; c<col; c++) {
+                    let x = -c * w;
+                    let y = -r * h;
+                    canvas.width = w;
+                    canvas.height = h;
+                    ctx.drawImage(this, x, y, w*col, h*row);
+                    let imgSataString = canvas.toDataURL('image/png');
+                    let slicedImage = document.createElement('img')
+                    slicedImage.src = imgSataString;
+                    let puzzle = document.getElementById('myPuzzle');
+                    puzzle.appendChild( slicedImage );
+                }
+            }
+        }
+        img.src = './img/images/doge1.gif';
+    </script> -->
+</body>
+</html>

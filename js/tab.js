@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
 
     $(function(){
-        $("li").click(function(){
+        $("li>a").click(function(){
             $(this).addClass("ch_bg").siblings().removeClass("ch_bg");
         });
     });

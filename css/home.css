@@ -15,7 +15,7 @@ body{
 	position: relative;
 	margin:0;
 	background:#ffc349;
-	font-family: 'Noto Sans TC';
+	font-family: 'Noto Sans TC',"微軟正黑體";
 	scroll-behavior: smooth;
 }
 
@@ -171,7 +171,8 @@ article{
   }
 
 .title,.titleup{
-	width: 300px;
+	max-width: 300px;
+	min-width: 200px;
 	margin: 60px auto 0;
 }
 
@@ -238,7 +239,7 @@ h3{
 	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
 }
 
-#memebtn img:hover{
+#memebtn img:hover,#projectbtn img:hover{
 	box-shadow: 2px 2px 8px #141414;
 	-ms-transform: scale(1.1,1.1);	/* IE 9*/
 	-webkit-transform: scale(1.1,1.1);	/*Safari*/
@@ -256,14 +257,14 @@ h3{
 	opacity: 0;
 }
 
-#projectbtn:hover img{
-	-webkit-filter: brightness(50%); /*Safari*/
+/* #projectbtn:hover img{
+	-webkit-filter: brightness(50%); 
 	filter: brightness(50%);
 }
 
 #projectbtn:hover .fadebox{
 	opacity: 1;
-}
+} */
 
 .linktext{
 	display: block;

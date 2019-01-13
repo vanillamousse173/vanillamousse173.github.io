@@ -14,7 +14,7 @@ body{
 	position: relative;
 	margin:0;
 	background:#056;
-	font-family: 'Noto Sans TC';
+	font-family: 'Noto Sans TC',"微軟正黑體";
 	scroll-behavior: smooth;
 }
 
@@ -191,7 +191,7 @@ header {
 
 	.linktext{
 	font-size: 12pt;
-	padding: 8px 5px;
+	padding: 8px 15px;
 	}
 	
 }
@@ -209,6 +209,6 @@ header {
 
 	.linktext{
 	font-size: 14pt;
-	padding: 16px 15px;
+	padding: 16px 10px;
 	}
 }
