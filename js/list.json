@@ -1,74 +1,295 @@
 [
 	{
-	"meme": "what'smeme.html",
-	"pic": "img/P_WhatIsMeme.jpg",
-	"title": "什麼是meme？"
+	"link":"https://knowyourmeme.com/",
+	"text":"Know Your Meme",
+	"intro":"彷彿meme界維基百科的存在。</br></br>想要找迷因的詳盡來源（in English），</br>來這裡就對了。</br>有國中英文程度就沒問題。</br>（吧）"
 	},
 
 	{
-	"meme": "doge.html",
-	"pic": "img/P_Doge.jpg",
-	"title": "Doge"
+	"link":"https://9gag.com/",
+	"text":"9GAG",
+	"intro":"每天都有大量生產的meme寶庫，</br>想要什麼都有，</br>追蹤FB、IG以每天獲得快樂。"
 	},
 
 	{
-	"meme": "history.html",
-	"pic": "img/P_history.jpg",
-	"title": "迷因的歷史"
+	"link":"http://www.4chan.org/",
+	"text":"4chan",
+	"intro":"美國ACG貼圖討論版，</br>許多有趣事件的誕生地。</br></br>有R18內容請自主規範。"
 	},
 
 	{
-	"meme": "pepe.html",
-	"pic": "img/P_Pepe.jpg",
-	"title": "Pepe"
+	"link":"https://www.facebook.com/4d3d3d3.engaged/",
+	"text":"4d3d3d3 Engaged",
+	"intro":"把meme變成3D照片或3D模型，</br>兼具內容與技術力的優質FB粉專。"
 	},
 
 	{
-	"meme": "rainbowcat.html",
-	"pic": "img/P_rainbowcat.jpg",
-	"title": "彩虹貓"
+	"link":"https://www.facebook.com/ocfreshstolenmemes1/",
+	"text":"F R E S H S T O L E N M E M E S",
+	"intro":"精選有趣相片、影片和梗圖，</br>提供歡笑的FB中繼站。"
 	},
 
 	{
-	"meme": "evolution.html",
-	"pic": "img/P_evolution.jpg",
-	"title": "迷因的演化"
+	"link":"https://www.facebook.com/MemesSociety/",
+	"text":"Meme Society",
+	"intro":"Many搞笑圖片和梗圖，</br>提供歡笑的FB中繼站2。"
 	},
 
 	{
-	"meme": "train.html",
-	"pic": "img/P_train.jpg",
-	"title": "火車難題"
+	"link":"https://www.facebook.com/6memes9/",
+	"text":"6 MeMes 9",
+	"intro":"Plenty of有趣相片和梗圖，</br>提供歡笑的FB中繼站3。"
 	},
 
 	{
-	"meme": "whouse.html",
-	"pic": "img/P_whouse.jpg",
-	"title": "誰在用迷因？"
+	"link":"https://www.facebook.com/TopDankestMemes/",
+	"text":"Dankest Memes",
+	"intro":"Lots of搞笑圖片和梗圖，</br>提供歡笑的FB中繼站4。"
 	},
 
 	{
-	"meme": "evolution.html",
-	"pic": "img/P_evolution.jpg",
-	"title": "迷因的特色"
+	"link":"https://twitter.com/FreeMemesKids",	
+	"text":"Dank Memes<br>💎💎💎",
+	"intro":"Twitter的迷因集中大本營，</br>大部分是短小精悍的搞笑小短片。</br></br>在YouTube上經營Freememeskids頻道。</br>在這格右邊。"
 	},
 
 	{
-	"meme": "yinwu.html",
-	"pic": "img/P_yinwu.jpg",
-	"title": "鸚鵡兄弟"
+	"link":"https://www.youtube.com/freememeskidsyt",
+	"text":"Freememeskids",
+	"intro":"Dank Memes💎💎💎的YouTube頻道，</br>每週有BEST MEMES COMPILATION影片更新。"
 	},
 
 	{
-	"meme": "normie.html",
-	"pic": "img/P_normie.jpg",
-	"title": "Normie"
+	"link":"https://www.youtube.com/user/PewDiePie",
+	"text":"PewDiePie",
+	"intro":"令人尊敬的YouTube霸主。</br>2018年做了一整年的MEME REVIEW系列。</br></br>JUST SUBSCRIBE TO PEWDIEPIE。"
 	},
 
 	{
-	"meme": "ExpBrn.html",
-	"pic": "img/P_ExpBrn.jpg",
-	"title": "大腦開發"
+	"link":"https://www.youtube.com/channel/UCa6TeYZ2DlueFRne5DyAnyg/",
+	"text":"Grandayy",
+	"intro":"知名的迷因YouTuber，</br>創作影片型的迷因。</br></br>很愛Robbie Rotten。"
+	},
+
+	{
+	"link":"https://www.youtube.com/channel/UCdsE9y553KP7Z7MDXzM1sRg",
+	"text":"Behind the meme",
+	"intro":"迷因背景故事YouTube頻道，</br>簡單易懂的講解迷因（in English），</br>敘述十分流暢。"
+	},
+
+	{
+	"link":"https://www.reddit.com/r/WTF/",
+	"text":"ボケてbokete",
+	"intro":"日本的網路搞笑平台，發布的圖片有固定格式。</br>以圖片搭配一句意想不到的話，</br>屬於日式風格的爆笑大集錦。</br></br>ボケ（Boke）為日文「呆子、傻瓜」的意思，</br>ボケて（Bokete）即為裝傻之意。"
+	},
+
+	{
+	"link":"https://www.reddit.com/r/WTF/",
+	"text":"/r/WTF",
+	"intro":"國外論壇Reddit的子版之一</br>原汁原味ㄉWTF內容。"
+	},
+
+	{
+	"link":"https://www.reddit.com/r/memes/",
+	"text":"/r/memes",
+	"intro":"國外論壇Reddit的子版之一</br>meme專屬版。"
+	},
+
+	{
+	"link":"https://www.reddit.com/r/dankmemes/",
+	"text":"/r/dankmemes",
+	"intro":"國外論壇Reddit的子版之一</br>dankmeme專屬版。"
+	},
+
+	{
+	"link":"https://www.facebook.com/%E8%BF%B7%E5%9B%A0%E5%82%B3%E8%85%A6Memes-Addiction-1533865249957605/",
+	"text":"迷因傳腦",
+	"intro":"臺灣迷因專頁的領頭羊，</br>心靈休憩的彼岸。</br></br>管管很酷（不是那個管），</br>講話很Q。"
+	},
+
+	{
+	"link":"https://www.facebook.com/DankMemes02/",
+	"text":"癲客迷因2",
+	"intro":"臺灣迷因專頁的先驅，</br>承癲客迷因精神再起的二號專頁。</br></br>不知道去哪了都沒有更新嗚嗚。"
+	},
+
+	{
+	"link":"https://theuselessweb.com/",
+	"text":"The Useless Web",
+	"intro":"很廢但很讚。"
+	},
+
+	{
+	"link":"https://twitter.com/pakalupapitio",
+	"text":"Pakalu Papito",
+	"intro":"不知道在幹嘛的印度人，</br>說話很好笑。"
+	},
+
+	{
+	"link":"https://forum.gamer.com.tw/B.php?bsn=60076&subbsn=1",
+	"text":"巴哈姆特場外",
+	"intro":"ACG愛好者們在巴哈姆特放鬆休憩的場所，</br>有許多有趣的話題可以參與。"
+	},
+
+	{
+	"link":"https://www.ixigua.com/c/user/6806857445/",
+	"text":"华农兄弟",
+	"intro":"引發2018年竹鼠之亂的魔性視頻主。</br></br>以農村生活為題材，簡單樸實，</br>畫面取景和剪接相當有水準。"
+	},
+
+	{
+	"link":"https://www.youtube.com/channel/UCg0m_Ah8P_MQbnn77-vYnYw",
+	"text":"美食作家王刚",
+	"intro":"來自四川的廚師長王剛老師，</br>以硬派的料理底子教你各式佳餚的每一道步驟。</br></br>各位同學記得把鍋燒熱。"
+	},
+
+	{
+	"link":"https://hornydragon.blogspot.com/search/label/%E9%9B%9C%E4%B8%83%E9%9B%9C%E5%85%AB%E7%9F%AD%E7%AF%87%E6%BC%AB%E7%95%AB%E7%BF%BB%E8%AD%AF",
+	"text":"好色龍",
+	"intro":"臺灣網路翻譯的先驅，</br>替臺灣開啟了一個梗圖蓬勃發展的輝煌世代。</br></br>雜七雜八短篇漫畫翻譯精選各種國內外有趣內容，</br>是許多人每週的精神食糧。"
+	},
+
+	{
+	"link":"https://www.facebook.com/PomelanTranslating/",
+	"text":"Pomelan",
+	"intro":"品質精緻而產量穩定的網路翻譯者。</br></br>迷因主要有「相信我系列」、「歷史迷因」系列，</br>也有多篇網路漫畫同步翻譯中。"
+	},
+
+	{
+	"link":"https://www.facebook.com/Garrett-Destiny-902982306534017/",
+	"text":"Garrett Destiny",
+	"intro":"簡單、精準命中的迷因粉專。</br>看起來喜歡月野兔。"
+	},
+
+	{
+	"link":"https://www.facebook.com/SandTranslate/",
+	"text":"沙子與他愉快夥伴們的翻譯同盟",
+	"intro":"由三人組成的翻譯粉專，</br>有來自9GAG的英翻中，</br>也有來自Twitter或Bokete的日翻中梗圖。"
+	},
+
+	{
+	"link":"https://www.facebook.com/JayCeeWTF/",
+	"text":"JayCee 隨便翻",
+	"intro":"產值相當高的迷因粉專，</br>有影片、梗圖搬運。"
+	},
+
+	{
+	"link":"https://www.facebook.com/Zass17-%E6%80%AA%E5%9C%96%E9%9A%A8%E4%BE%BF%E7%9C%8B-1487843391527874/"
+	,"text":"Zass17 怪圖隨便看",
+	"intro":"Zass17的附屬粉專，</br>和主頁zass17分享歷史照片和趣味知識不同，</br>有更多的梗圖翻譯。"
+	},
+
+	{
+	"link":"https://www.facebook.com/jamesiscurly2/",
+	"text":"姆士捲雜物誌",
+	"intro":"翻譯相當多的趣味影片與各式趣圖，</br>題材相當廣泛，但深得人心。</br>有持續翻譯某些國外影片創作者的作品。"
+	},
+
+	{
+	"link":"https://www.facebook.com/carsmeme/",
+	"text":"汽車迷因",
+	"intro":"供奉卡翹之神的迷因粉專。</br></br>所有的內容都與汽車有關，</br>即使只有一個主題仍變化多端、相當優質。"
+	},
+
+	{
+	"link":"https://www.facebook.com/HistoriaMemesFormosa/",
+	"text":"歷史迷因",
+	"intro":"以歷史事件、圖片為素材的迷因粉專。"
+	},
+
+	{
+	"link":"https://www.facebook.com/memeofphilosophy/",
+	"text":"哲學迷因",
+	"intro":"讓人靜下來思考人生的哲學相關迷因粉專。</br></br>最近沒有更新，有點難過。"
+	},
+
+	{
+	"link":"https://www.facebook.com/AnimeMemesTaiwan/",
+	"text":"動漫迷因",
+	"intro":"使用動漫為素材的迷因粉專，</br>將美好的事物結合的好地方。"
+	},
+
+	{
+	"link":"https://www.facebook.com/memesengineering/",
+	"text":"迷因工程",
+	"intro":"以理工知識為素材，</br>混有部分日常生活內容的迷因粉專。"
+	},
+
+	{
+	"link":"https://www.facebook.com/FPGamingTheMemes/",
+	"text":"火炮迷因",
+	"intro":"以軍事科技、戰爭為素材的迷因粉專，</br>內容意外地相當生活化。"
+	},
+
+	{
+	"link":"https://www.facebook.com/MemeCenturies/",
+	"text":"迷因世紀",
+	"intro":"經營新大陸糯米模擬器</br>（現名Mafia Simulator）的綜合型迷因粉專。"
+	},
+
+	{
+	"link":"https://www.facebook.com/DankMemeTherapy/",
+	"text":"迷因療法2",
+	"intro":"選材精確的綜合型迷因粉專。</br></br>有zucced危機而設有IG、Twitter、噗浪</br>等多平台避難所。"
+	},
+
+	{
+	"link":"https://www.facebook.com/retardtranslation/",
+	"text":"亂翻迷因",
+	"intro":"綜合型迷因粉專，很多有的沒有的東東。"
+	},
+
+	{
+	"link":"https://www.facebook.com/cat.memes222/",
+	"text":"貓咪迷因",
+	"intro":"提供給吸貓成癮者的迷因粉專。</br></br>所有內容都與貓咪有關，不需要理由，</br>因為貓乃人類至高無上的統治者。"
+	},
+
+	{
+	"link":"https://www.facebook.com/SoMuchDepression/",
+	"text":"飲む猫ｖｏｄｋａ",
+	"intro":"主要在吸貓咪咪的迷因粉專，</br>但也吸一點別的東西。"
+	},
+
+	{
+	"link":"https://goo.gl/5hdsTE",
+	"text":"ᴰʳ⋅ ᶠᵘʳᶦᵒᵘˢ ᴮᵒᶦ ˢᵗᵉᵃᶫᶻ ᵈᵃᵗ ᵇᶦʳᵇ ᵐᵉᵐᵉᶻ 偷來ㄉ香脆鳥兒迷因",
+	"intro":"ㄎㄧㄤㄎㄧㄤ的鳥鳥迷因粉專，</br>很有態度。</br></br>提供給既非狗派也非貓派的朋友。"
+	},
+
+	{
+	"link":"https://www.facebook.com/sadhakkaboy2017/",
+	"text":"反社會客家人 Ｓａｄ Ｈａｋｋａ Ｂｏｙ ２０１７",
+	"intro":"很多怪怪的東西，很客(?)。</br>內容呼應時事。"
+	},
+
+	{
+	"link":"https://www.facebook.com/zhongguowave",
+	"text":"弌果両汁 memes for 中国の青壮年",
+	"intro":"走諷刺主義路線的迷因粉專，</br>有大量的兩岸政治題材。"
+	},
+
+	{
+	"link":"https://www.facebook.com/groups/1343933772408499/?fref=nf",
+	"text":"subtle asian traits",
+	"intro":"堪稱全球華人最大同溫層的FB社團，</br>適合討拍、尋求溫暖、抱怨亞洲父母。"
+	},
+
+	{
+	"link":"https://www.facebook.com/groups/NonsenseTaDeVolta/permalink/2255278534727232/",
+	"text":"Non Sense Memes",
+	"intro":"國外的迷因分享社團，</br>多為轉傳有趣內容。"
+	},
+
+	{
+	"link":"https://www.facebook.com/groups/MemeSimulators/",
+	"text":"迷因模擬器",
+	"intro":"臺灣的迷因分享社團，</br>多為自製既有的迷因。"
+	},
+
+	{
+	"link":"https://www.facebook.com/groups/MainlandGlutinousRiceSimulators/",
+	"text":"新大陸糯米模擬器",	
+	"intro":"定位為國外論壇風格之迷因分享社團，</br>不定期改名。</br>（現名Mafia Simulator）"
 	}
-
 ]
