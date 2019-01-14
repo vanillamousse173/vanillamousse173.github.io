@@ -41,7 +41,8 @@
 	background-size: 100%;
 }
 
-#c1:hover{
+#c1:hover,
+#c1.c_selected{
 	background:url(../img/momo.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
@@ -60,7 +61,8 @@
 	background-size: 100%;
 }
 
-#c2:hover{
+#c2:hover,
+#c2.c_selected{
 	background:url(../img/clam.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
@@ -78,7 +80,8 @@
 	background-size: 100%;
 }
 
-#c3:hover{
+#c3:hover,
+#c3.c_selected{
 	background:url(../img/mush.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
@@ -96,7 +99,8 @@
 	background-size: 100%;
 }
 
-#c4:hover{
+#c4:hover,
+#c4.c_selected{
 	background:url(../img/RRC.gif) no-repeat;
 	background-position: 0px,0px;
 	background-size: 100%;
