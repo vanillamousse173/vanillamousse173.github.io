@@ -26,9 +26,9 @@ img.onload = function() {
 } // end of onload
 
 // 圖片的延遲時間  (秒)
-let delay = 2;
+let delay = 5;
 
-// 製換圖片
+// 置換圖片
 function change_image_loop() {
     setTimeout(()=>{
         img.src = "img/images/puzz2.jpg";
