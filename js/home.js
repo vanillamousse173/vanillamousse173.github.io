@@ -90,10 +90,10 @@ $('.intro').eq(49).show();
 
 $('.tip').hover(function(){
 	var _index = $(this).index();
-	$('.intro').eq(_index).show().siblings().hide();		
+	$('.intro').eq(_index).stop(true).slideDown(200).siblings().slideUp(200);		
 	
 },function(){
-	$('.intro').eq(49).show().siblings().hide();		
+	$('.intro').eq(49).stop(true).slideDown(200).siblings().slideUp(200);		
 	
 });		
 
