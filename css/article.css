@@ -35,8 +35,9 @@ header {
 
 .bookmark{
 	position: fixed;
-	right: 5%;
+	right: -202px;
 	top: 120px;
+	z-index: 60;
 }
 
 .bookmark a{
@@ -44,14 +45,14 @@ header {
 	text-decoration: none;
 	color: #fff;
 	margin: 10px;
-	padding: 5px 10px;
+	padding: 5px 15px 5px 10px;
 	background: #fe5656;
 	border-radius: 5px;
 	transition: 0.3s;
 }
 
 .bookmark a:hover{
-	transform: translateX(-10px);
+	transform: translateX(-160px);
 }
 
 section{
@@ -100,7 +101,7 @@ h3{
 	letter-spacing: 2px;
 }
 
-.tag{
+/* .tag{
 	margin-bottom: 10px;
 	width: 100%;
 }
@@ -119,6 +120,16 @@ h3{
 	line-height: 16pt;
 	color: #fff;
 	background-color: #fe5656; 
+} */
+
+p>a{
+	border-bottom: dotted 2px #fe5656;
+	color: #000;
+}
+
+p>a:hover{
+	border-bottom: dotted 2px #fe5656;
+	color:  #fe5656;
 }
 
 .tooltip {
@@ -165,7 +176,7 @@ h3{
 	color: #fff;
 }
 
-.tooltiptext a:hover{
+a,.tooltiptext a:hover{
 	text-decoration: none;
 	color:#fe5656;
 }
@@ -307,6 +318,19 @@ h3{
 		right: 3%;
 	}
 
+	.bookmark{
+		position: fixed;
+		right: -110px;
+	}
+
+	.bookmark a{
+		padding: 5px 10px;
+	}
+	
+	.bookmark a:hover{
+		transform: translateX(-100px);
+	}
+
 	.draw{		
 		display: block;
 		position: fixed;
@@ -319,6 +343,15 @@ h3{
 @media only screen and (min-width: 1200px) {
 	article{
 		width:50%;
+	}
+
+	.bookmark{
+		position: fixed;
+		right: 5%;
+	}
+
+	.bookmark a:hover{
+		transform: translateX(-20px);
 	}
 
 	.backtolist{
