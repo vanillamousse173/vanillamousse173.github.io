@@ -33,6 +33,27 @@ header {
 	top: 0px;
 }
 
+.bookmark{
+	position: fixed;
+	right: 5%;
+	top: 120px;
+}
+
+.bookmark a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	margin: 10px;
+	padding: 5px 10px;
+	background: #fe5656;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.bookmark a:hover{
+	transform: translateX(-10px);
+}
+
 section{
 	position: relative;
 	width: 100%;
