@@ -9,13 +9,16 @@ $(document).ready(function() {
 
 
 	// Click event to scroll to top
-	// $(function(){
-	// 	$('a[href*="#"]').on('click', function (e) {
-	// 		e.preventDefault();
-	// 		$('html, body').animate({
-	// 				scrollTop: $($(this).attr('href')).offset().top - 120
-	// 			}, 500, 'linear');
-	// 	});
-	// });
+	$(function(){
+		$('a[href*="#"]').on('click', function (e) {
+			let target = $($(this).attr('href'));
+			if (target && target.length > 0) {
+				e.preventDefault();
+			}
+			$('html, body').animate({
+					scrollTop: target.offset().top - 120
+				}, 500, 'linear');
+		});
+	});
 
 });
