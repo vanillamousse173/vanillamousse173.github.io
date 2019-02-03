@@ -272,27 +272,6 @@
 
 <footer></footer>
 
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    // 設定iframe的寬度為 寬:高，16:9
-    document.querySelectorAll('.swiper-slide > iframe').forEach( (iframe) => {
-        iframe.style.width = `${swiper.height/9*16}px`;
-    });
-</script>
-
 </body>
 
 </html>
