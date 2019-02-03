@@ -210,7 +210,11 @@
 
     // 設定iframe的寬度為 寬:高，16:9
     document.querySelectorAll('.swiper-slide > iframe').forEach( (iframe) => {
-        iframe.style.width = `${swiper.height/9*16}px`;
+        if (Array.isArray(swiper)) {
+            iframe.style.width = `${swiper[0].height/9*16}px`;    
+        } else if (swiper) {
+            iframe.style.width = `${swiper.height/9*16}px`;
+        }
     });
 </script>
 
