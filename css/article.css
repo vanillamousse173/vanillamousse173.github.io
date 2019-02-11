@@ -61,7 +61,7 @@ section{
 }
 
 article{
-	width:80%;
+	width:90%;
 	margin: 60px auto 180px;
 	scroll-behavior: smooth;
 }
@@ -96,6 +96,17 @@ h3{
 	display: inline-block;
 	background-color: #fe5656;
 	margin: 30px 0 0 10px ;
+	padding:5px 10px ;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+h4{
+	font-size: 12pt;
+	display: inline-block;
+	color: #fff;
+	background-color: #fe5656;
+	margin: 20px 0 0 10px ;
 	padding:5px 10px ;
 	font-weight: 500;
 	letter-spacing: 2px;
@@ -239,6 +250,30 @@ a,.tooltiptext a:hover{
 	margin: 0;
 }
 
+/* video */
+.interview{
+	margin: 120px auto 0;
+	text-align: center;
+}
+
+.interview > iframe{
+	width: 480px;
+	height: 270px;
+}
+
+.interviewarticle{
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align:top;
+	margin-top: 160px;
+	padding: 10px;
+	width:33%;
+	height: 350px;
+	overflow:auto;
+	margin-left:20px; 
+	scroll-behavior: smooth;
+}
+
 /* swiper */
 .swiper-container{
 	width: 100%;
@@ -294,7 +329,7 @@ a,.tooltiptext a:hover{
 }
 
 /* 調整swiper裡面的youtube影片 寬高使填滿 */
-.swiper-slide > iframe {
+.swiper-slide > iframe{
 	width: auto;
 	height: 100%;
 }
@@ -309,6 +344,15 @@ a,.tooltiptext a:hover{
 	article{
 		width:60%;
 		margin-bottom: 150px;
+	}
+
+	.interview{
+		margin: 150px 0 0 60px;
+	}
+
+	.interview > iframe{
+		width: 640px;
+		height: 360px;
 	}
 
 	.backtolist{
@@ -337,12 +381,24 @@ a,.tooltiptext a:hover{
 		width:20%;
 		margin-bottom: -8px;
 	}
+
 }
 
 /*for desktop*/
 @media only screen and (min-width: 1200px) {
 	article{
 		width:50%;
+	}
+
+	.interview{
+		margin: 150px 0 0 100px;
+		text-align: left;
+		display: inline-block;
+	}
+	
+	.interview > iframe{
+		width: 800px;
+		height: 450px;
 	}
 
 	.bookmark{
