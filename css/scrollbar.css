@@ -1,72 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*scrollbar*/
-
-/*定義滾動條寬高及背景
- 寬高分别對應横豎滚動條的尺寸*/
- ::-webkit-scrollbar{
-    width:10px;
-    height:10px;
-    /*background-color:#F5F5F5;*/
-	}
-
-/*定義滾動條軌道
- 內陰影+圓角*/
-::-webkit-scrollbar-track{
-	/*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);*/
-    border-radius:5px;
-    background-color:#F5F5F5;
-	}
-
-/*定義滑塊
- 内陰影+圓角*/
-::-webkit-scrollbar-thumb
-	{
-    border-radius:5px;
-	/*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);*/
-    background-color:#fe5656;
-    }
-    
-.backtolist2{
-    width: 120px;
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 80px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.backtolist2 img{
-    width: 100%;
-    padding: 10px 5px;
-    border-radius:5px; 
-    background-color: #fe5656;
-
-    -ms-transform:scale(1,1);	/* IE 9*/
-    -webkit-transform: scale(1,1);	/*Safari*/
-    transform: scale(1,1);	/*Standard syntax*/
-    
-    transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;/*Safari*/
-
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
-}
-
-.backtolist2 img:hover{
-    box-shadow: 2px 2px 8px #bc9b58;
-    -ms-transform: scale(1.2,1.2);	/* IE 9*/
-    -webkit-transform: scale(1.2,1.2);	/*Safari*/
-    transform: scale(1.2,1.2);	/*Standard syntax*/
-}
-
-
 /* video */
 .interview{
 	margin: 120px auto 0;
-	text-align: center;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
 }
 
 .interview > iframe{
@@ -75,56 +15,41 @@
 }
 
 .interviewarticle{
-	box-sizing: border-box;
-	display: inline-block;
-	vertical-align:top;
-	margin-top: 160px;
 	padding: 10px;
-	width:33%;
-	height: 350px;
-	overflow:auto;
-	margin-left:20px; 
-	scroll-behavior: smooth;
+	width:90%;
+	margin: 0px auto 180px; 
+    scroll-behavior: smooth;
 }
 
 /*for tablets*/
 @media only screen and (min-width: 768px) {
 
 	.interview{
-		margin: 150px 0 0 60px;
+        margin: 150px auto 0px;
+        text-align: center;
 	}
 
 	.interview > iframe{
 		width: 640px;
 		height: 360px;
-	}
-
-	.backtolist2{
-		transform: initial;
-		width: 120px;
-		position: fixed;
-		right: 3%;
-	}
+    }
+    
+    .interviewarticle{
+        width:60%;
+    }
 
 }
 
 /*for desktop*/
 @media only screen and (min-width: 1200px) {
-
-	.interview{
-		margin: 150px 0 0 100px;
-		text-align: left;
-		display: inline-block;
-	}
 	
 	.interview > iframe{
 		width: 800px;
 		height: 450px;
-	}
-
-	.backtolist2{
-		width: 150px;
-		right: 5%;
-	}
+    }
+    
+    .interviewarticle{
+        width:50%;
+    }
 
 }

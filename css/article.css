@@ -250,30 +250,6 @@ a,.tooltiptext a:hover{
 	margin: 0;
 }
 
-/* video */
-.interview{
-	margin: 120px auto 0;
-	text-align: center;
-}
-
-.interview > iframe{
-	width: 480px;
-	height: 270px;
-}
-
-.interviewarticle{
-	box-sizing: border-box;
-	display: inline-block;
-	vertical-align:top;
-	margin-top: 160px;
-	padding: 10px;
-	width:33%;
-	height: 350px;
-	overflow:auto;
-	margin-left:20px; 
-	scroll-behavior: smooth;
-}
-
 /* swiper */
 .swiper-container{
 	width: 100%;
