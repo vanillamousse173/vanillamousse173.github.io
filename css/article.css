@@ -138,9 +138,17 @@ p>a{
 	color: #000;
 }
 
+h3>a{
+	color:  #fff;
+}
+
 p>a:hover{
 	border-bottom: dotted 2px #fe5656;
 	color:  #fe5656;
+}
+
+h3>a:hover{
+	border-bottom: dotted 2px #fff;
 }
 
 .tooltip {
