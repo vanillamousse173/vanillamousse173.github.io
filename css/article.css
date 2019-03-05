@@ -112,27 +112,6 @@ h4{
 	letter-spacing: 2px;
 }
 
-/* .tag{
-	margin-bottom: 10px;
-	width: 100%;
-}
-
-.tag a{
-	text-decoration: none;
-	color: #000;
-	display: inline-block;
-	font-size: 12pt;
-	margin-right: 5px;
-	padding: 2px 5px;
-	border-radius: 5px;
-}
-
-.tag a:hover{
-	line-height: 16pt;
-	color: #fff;
-	background-color: #fe5656; 
-} */
-
 p>a{
 	border-bottom: dotted 2px #fe5656;
 	color: #000;
