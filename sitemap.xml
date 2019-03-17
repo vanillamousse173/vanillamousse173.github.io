@@ -9,22 +9,22 @@
 
 <url>
   <loc>https://cultivatememe.moe/</loc>
-  <lastmod>2019-03-09T17:15:19+00:00</lastmod>
+  <lastmod>2019-03-11T08:12:08+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://cultivatememe.moe/index.html</loc>
-  <lastmod>2019-03-09T17:15:19+00:00</lastmod>
+  <lastmod>2019-03-11T08:12:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cultivatememe.moe/meme.html</loc>
-  <lastmod>2019-03-10T04:07:40+00:00</lastmod>
+  <lastmod>2019-03-16T05:17:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cultivatememe.moe/project.html</loc>
-  <lastmod>2019-03-06T13:38:17+00:00</lastmod>
+  <lastmod>2019-03-13T13:39:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -69,7 +69,7 @@
 </url>
 <url>
   <loc>https://cultivatememe.moe/whouse.html</loc>
-  <lastmod>2019-02-23T18:34:30+00:00</lastmod>
+  <lastmod>2019-03-11T08:12:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -94,7 +94,7 @@
 </url>
 <url>
   <loc>https://cultivatememe.moe/commercialize.html</loc>
-  <lastmod>2019-03-01T12:23:06+00:00</lastmod>
+  <lastmod>2019-03-11T08:12:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -105,6 +105,16 @@
 <url>
   <loc>https://cultivatememe.moe/deadmeme.html</loc>
   <lastmod>2019-03-08T11:02:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/dank.html</loc>
+  <lastmod>2019-03-11T08:12:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/yee.html</loc>
+  <lastmod>2019-03-14T18:49:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -119,12 +129,12 @@
 </url>
 <url>
   <loc>https://cultivatememe.moe/weekly3.html</loc>
-  <lastmod>2019-03-10T03:59:54+00:00</lastmod>
+  <lastmod>2019-03-12T05:14:45+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cultivatememe.moe/memesaddiction.html</loc>
-  <lastmod>2019-03-05T13:06:25+00:00</lastmod>
+  <lastmod>2019-03-11T08:12:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -134,13 +144,23 @@
 </url>
 <url>
   <loc>https://cultivatememe.moe/hornydragon.html</loc>
-  <lastmod>2019-03-05T13:06:25+00:00</lastmod>
+  <lastmod>2019-03-11T08:12:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cultivatememe.moe/carsmeme.html</loc>
   <lastmod>2019-03-10T03:59:54+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/zhongguowave.html</loc>
+  <lastmod>2019-03-12T05:19:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/taiwan1.html</loc>
+  <lastmod>2019-03-14T13:46:54+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
