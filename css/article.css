@@ -112,12 +112,16 @@ h4{
 	letter-spacing: 2px;
 }
 
+h4>img{
+	width: 120px;
+}
+
 p>a{
 	border-bottom: dotted 2px #fe5656;
 	color: #000;
 }
 
-h3>a{
+h3>a,h4>a{
 	color:  #fff;
 }
 
@@ -126,7 +130,7 @@ p>a:hover{
 	color:  #fe5656;
 }
 
-h3>a:hover{
+h3>a:hover,h4>a:hover{
 	border-bottom: dotted 2px #fff;
 }
 
@@ -302,6 +306,14 @@ a,.tooltiptext a:hover{
 	height: 100%;
 }
 
+.chart{
+	width: 100%;
+}
+
+.chart img{
+	width: 100%;
+}
+
 /*for tablets*/
 @media only screen and (min-width: 768px) {
 	article{
@@ -345,6 +357,10 @@ a,.tooltiptext a:hover{
 		margin-bottom: -8px;
 	}
 
+	.chart{
+		width: 80%;
+	}
+
 }
 
 /*for desktop*/
@@ -376,6 +392,10 @@ a,.tooltiptext a:hover{
 	.backtolist{
 		width: 150px;
 		right: 5%;
+	}
+
+	.chart{
+		width: 60%;
 	}
 
 }
