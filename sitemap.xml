@@ -19,7 +19,7 @@
 </url>
 <url>
   <loc>https://cultivatememe.moe/meme.html</loc>
-  <lastmod>2019-03-25T05:04:31+00:00</lastmod>
+  <lastmod>2019-04-01T10:55:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -123,12 +123,22 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://cultivatememe.moe/kachow.html</loc>
-  <lastmod>2019-03-25T05:04:31+00:00</lastmod>
+  <loc>https://cultivatememe.moe/delicious.html</loc>
+  <lastmod>2019-03-31T13:28:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cultivatememe.moe/ragecomic.html</loc>
+  <lastmod>2019-03-26T19:06:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/taiwan2.html</loc>
+  <lastmod>2019-03-25T05:04:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/kachow.html</loc>
   <lastmod>2019-03-25T05:04:31+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -145,6 +155,11 @@
 <url>
   <loc>https://cultivatememe.moe/weekly3.html</loc>
   <lastmod>2019-03-12T05:14:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/weekly4.html</loc>
+  <lastmod>2019-04-04T15:16:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -176,11 +191,6 @@
   <loc>https://cultivatememe.moe/clubsandwich.html</loc>
   <lastmod>2019-03-20T08:11:44+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://cultivatememe.moe/taiwan2.html</loc>
-  <lastmod>2019-03-25T05:04:31+00:00</lastmod>
-  <priority>0.51</priority>
 </url>
 
 
