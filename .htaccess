@@ -1,0 +1,3 @@
+RewriteEngine On
+# redirect index.html to /
+RewriteRule ^index\.html$ / [R=301,L]
