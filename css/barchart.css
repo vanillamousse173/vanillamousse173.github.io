@@ -5,7 +5,6 @@ dl {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 700px;
   position: relative;
   padding: 20px;
 }
