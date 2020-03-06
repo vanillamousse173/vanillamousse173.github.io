@@ -43,8 +43,14 @@ function change_image_loop() {
         img.src = "img/images/puzz5.jpg";
     }, delay * 4 * 1000);
     setTimeout(()=>{
-        img.src = "img/images/puzz1.jpg";
+        img.src = "img/images/puzz7.jpg";
     }, delay * 5 * 1000);
+    setTimeout(()=>{
+        img.src = "img/images/puzz6.jpg";
+    }, delay * 6 * 1000);
+    setTimeout(()=>{
+        img.src = "img/images/puzz1.jpg";
+    }, delay * 7 * 1000);
 }
 
 // 初始化
@@ -52,4 +58,4 @@ change_image_loop();
 img.src = "img/images/puzz1.jpg";
 setInterval(()=>{
     change_image_loop();
-}, 5 * delay * 1000);
+}, 7 * delay * 1000);
