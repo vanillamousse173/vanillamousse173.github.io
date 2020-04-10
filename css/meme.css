@@ -4,7 +4,7 @@
 @import url("rwd.css");
 @import url("nav.css");
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700');
 
 body{
 	display: flex; /*為了使footer置底*/
