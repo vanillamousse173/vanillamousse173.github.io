@@ -462,6 +462,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>    
 
     <div class="col-3 col-m-4">
+        <a href="Halloween.html">
+        <div class="box">
+            <div class="imgbox">
+                <img src="img/P_Halloween.jpg">
+            </div>
+            <h3>萬聖節迷因</h3>
+        </div>
+        </a>
+    </div> 
+
+    <div class="col-3 col-m-4">
         <a href="weekly1.html">
         <div class="box">
             <div class="imgbox">
@@ -528,15 +539,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     
     <div class="col-3 col-m-4">
-            <a href="weekly7.html">
-            <div class="box">
-                <div class="imgbox">
-                    <img src="img/P_vol.7.jpg">
-                </div>
-                <h3>窩der週記 Vol.7</h3>
+        <a href="weekly7.html">
+        <div class="box">
+            <div class="imgbox">
+                <img src="img/P_vol.7.jpg">
             </div>
-            </a>
+            <h3>窩der週記 Vol.7</h3>
         </div>
+        </a>
+    </div>
+
+    <div class="col-3 col-m-4">
+        <a href="weekly8.html">
+        <div class="box">
+            <div class="imgbox">
+                <img src="img/P_vol.8.jpg">
+            </div>
+            <h3>窩der週記 Vol.8</h3>
+        </div>
+        </a>
+    </div>
+
+    <div class="col-3 col-m-4">
+        <a href="weekly9.html">
+        <div class="box">
+            <div class="imgbox">
+                <img src="img/P_vol.9.jpg">
+            </div>
+            <h3>窩der週記 Vol.9</h3>
+        </div>
+        </a>
+    </div>
+
+    <div class="col-3 col-m-4">
+        <a href="weekly-20200407-coffin-dance.html">
+        <div class="box">
+            <div class="imgbox">
+                <img src="img/P_vol.20200407.jpg">
+            </div>
+            <h3>窩der週記 Vol.19</h3>
+        </div>
+        </a>
+    </div>
 
 </section>
 
@@ -547,6 +591,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <footer>
     &copy; 培養meme網站的內容由ㄇ團隊製作，歡迎轉貼並附上來源。Directed by Robert B. Weide, YP Chang.
 </footer>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        // 如果前一頁是從妹妹本站來的，找 section 裡面有沒有那個連結
+        // 若有，移動到該方塊，並偏移 yOffset 單位
+        let referrer = document.referrer;
+        let host = window.location.host;
+        if (referrer.includes(host)) {
+            let arr = referrer.split('/');
+            let page = arr[arr.length-1];
+            let target = document.querySelector(`section a[href='${page}'] img`);
+            if (target) {
+                const yOffset = -150; 
+                const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                // window.scrollTo({top: y, behavior: 'smooth'});
+                window.scrollTo({top: y, behavior: 'auto'});
+            }        
+        }
+    });    
+</script>
 
 </body>
 
