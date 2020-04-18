@@ -84,6 +84,7 @@ p{
 	letter-spacing: 2px;
 	text-align: justify;
 	font-weight: 400;
+	position: relative;
 }
 
 .centerline{
@@ -135,7 +136,7 @@ h3>a:hover,h4>a:hover{
 }
 
 .tooltip {
-    position: relative;
+    position: static;
     border-bottom: dotted 2px #fe5656;
     cursor: pointer;
     margin: 0;
@@ -145,11 +146,11 @@ h3>a:hover,h4>a:hover{
 .tooltip .tooltiptext {
     visibility: hidden;
     background-color: #056;
-    width: 300px;
+    width: 100%;
     color: #fff;
     text-align: justify;
     font-size: 10pt;
-    line-height: 18pt;
+    line-height: 16pt;
     border-radius: 5px;
 	padding: 5px 8px;
     position: absolute;
@@ -162,13 +163,13 @@ h3>a:hover,h4>a:hover{
 }
 
 .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
+	content: "";
+	position: absolute;
+	top: 100%;
 	left: 50%;
 	margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
+	border-width: 5px;
+	border-style: solid;
 	border-color: #056 transparent transparent transparent;
 }
 
@@ -363,6 +364,18 @@ a,.tooltiptext a:hover{
 
 	.chart{
 		width: 80%;
+	}
+
+	.tooltip {
+		position: relative;
+	}
+
+	.tooltip .tooltiptext {
+		width: 300px;
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 }
