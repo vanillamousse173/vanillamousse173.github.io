@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*CSS Document */
 
-@import url("rwd.css");
+/* @import url("rwd.css"); */
 @import url("nav.css");
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700&display=swap');
@@ -33,10 +33,12 @@ a{
 }
 
 section{
-	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	width: 80%;
 	margin: 60px auto 10px;
-	text-align: center;
 }
 
 header {
@@ -52,20 +54,18 @@ header {
 	width: 100%;
 }
 
-/* .meme-container{
-	margin-top: 60px;
-} */
+.meme-item{
+	flex-basis: 50%;
+}
 
 .box,.lock{
 	width: 80%;
 	position: relative;
 	color: #fff;
-	display: inline-block;
 	box-sizing: border-box;
 	text-align: center;
-	margin: auto;
+	margin: 5px auto;
 	border-radius: 10px;
-	overflow: hidden;
 }
 
 .box{
@@ -102,10 +102,9 @@ header {
 
 .box h3,.lock h3{
 	box-sizing: border-box;
-	margin: 20px auto 15px;
-	padding: 0px 20px;
-	line-height: 20pt;
-	font-size: 18pt;
+	margin: 0;
+	padding: 5px 5px 15px;
+	font-size: 0.9em;
 	font-weight: normal;
 }
 
@@ -181,8 +180,17 @@ header {
 		width: 35%;
 	}
 
+	.meme-item{
+		flex-basis: 33%;
+	}
+
+	.box,.lock{
+		margin: 20px auto;
+	}
+
 	.box h3,.lock h3{
 		min-height: 2.5em;
+		font-size: 1em;
 	}
 
 	.fadebox{
@@ -201,6 +209,11 @@ header {
 
 	.title{
 		width: 30%;
+	}
+
+	.meme-item{
+		flex-basis: 25%;
+	
 	}
 
 	.fadebox{
