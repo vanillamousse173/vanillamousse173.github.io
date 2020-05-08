@@ -302,7 +302,7 @@ a,.tooltiptext a:hover{
 	height: 100%;
 }
 
-.swiper-slide > img {
+.swiper-slide > img,video {
 	width: auto;
 	height: 100%;
 }
