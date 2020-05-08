@@ -37,7 +37,7 @@ section{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 80%;
+	width: 90%;
 	margin: 60px auto 10px;
 }
 
@@ -64,7 +64,7 @@ header {
 	color: #fff;
 	box-sizing: border-box;
 	text-align: center;
-	margin: 5px auto;
+	margin: 10px auto;
 	border-radius: 10px;
 }
 
@@ -104,7 +104,7 @@ header {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 5px 5px 15px;
-	font-size: 0.9em;
+	font-size: 1em;
 	font-weight: normal;
 }
 
@@ -176,6 +176,10 @@ header {
 /*for tablets*/
 @media only screen and (min-width: 768px) {
 	
+	section{
+		width: 80%;
+	}
+
 	.title{
 		width: 35%;
 	}
@@ -190,7 +194,6 @@ header {
 
 	.box h3,.lock h3{
 		min-height: 2.5em;
-		font-size: 1em;
 	}
 
 	.fadebox{
