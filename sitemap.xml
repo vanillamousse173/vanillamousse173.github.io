@@ -14,12 +14,12 @@
 </url>
 <url>
   <loc>https://cultivatememe.moe/meme.html</loc>
-  <lastmod>2020-04-24T09:48:13+00:00</lastmod>
+  <lastmod>2020-05-28T15:49:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cultivatememe.moe/project.html</loc>
-  <lastmod>2020-04-13T13:07:25+00:00</lastmod>
+  <lastmod>2020-04-25T13:44:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -118,7 +118,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://cultivatememe.moe/delicious.html</loc>
+  <loc>https://cultivatememe.moe/kachow.html</loc>
   <lastmod>2020-04-18T12:28:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -133,7 +133,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://cultivatememe.moe/kachow.html</loc>
+  <loc>https://cultivatememe.moe/delicious.html</loc>
   <lastmod>2020-04-18T12:28:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -203,18 +203,38 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://cultivatememe.moe/F.html</loc>
-  <lastmod>2020-04-24T09:41:40+00:00</lastmod>
+  <loc>https://cultivatememe.moe/kermit.html</loc>
+  <lastmod>2020-05-01T09:02:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://cultivatememe.moe/kermit.html</loc>
-  <lastmod>2020-04-24T09:41:40+00:00</lastmod>
+  <loc>https://cultivatememe.moe/F.html</loc>
+  <lastmod>2020-04-24T10:29:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/Philosoraptor.html</loc>
+  <lastmod>2020-05-01T09:20:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cultivatememe.moe/Halloween.html</loc>
   <lastmod>2020-04-18T12:28:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/dancingmeme.html</loc>
+  <lastmod>2020-05-15T09:34:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/HEYYEYAAEYAAAEYAEYAA.html</loc>
+  <lastmod>2020-05-21T08:37:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/dancingmeme2.html</loc>
+  <lastmod>2020-05-28T15:49:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -259,12 +279,12 @@
 </url>
 <url>
   <loc>https://cultivatememe.moe/weekly9.html</loc>
-  <lastmod>2020-04-18T12:28:21+00:00</lastmod>
+  <lastmod>2020-05-01T09:42:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://cultivatememe.moe/weekly-20191115-google-vs-bing.html</loc>
-  <lastmod>2020-04-18T12:28:21+00:00</lastmod>
+  <lastmod>2020-05-06T09:23:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -278,8 +298,28 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://cultivatememe.moe/2019rewind.html</loc>
+  <lastmod>2020-05-08T08:04:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/weekly-20200106-WWIII.html</loc>
+  <lastmod>2020-05-15T09:34:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/weekly-20200131-draw-25-and-meme-man-wurds.html</loc>
+  <lastmod>2020-05-21T08:37:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://cultivatememe.moe/weekly-20200407-coffin-dance.html</loc>
-  <lastmod>2020-04-18T12:28:21+00:00</lastmod>
+  <lastmod>2020-05-15T09:34:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/weekly-20200504-care-react-and-uchideodorou.html</loc>
+  <lastmod>2020-05-15T09:34:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -299,7 +339,7 @@
 </url>
 <url>
   <loc>https://cultivatememe.moe/carsmeme.html</loc>
-  <lastmod>2020-04-13T13:07:25+00:00</lastmod>
+  <lastmod>2020-04-25T13:44:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
