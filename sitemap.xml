@@ -14,7 +14,7 @@
 </url>
 <url>
   <loc>https://cultivatememe.moe/meme.html</loc>
-  <lastmod>2020-07-10T04:16:00+00:00</lastmod>
+  <lastmod>2020-07-30T12:41:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -263,6 +263,16 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://cultivatememe.moe/challenge.html</loc>
+  <lastmod>2020-07-24T07:22:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/trumpet-boy.html</loc>
+  <lastmod>2020-07-30T12:41:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://cultivatememe.moe/weekly1.html</loc>
   <lastmod>2020-04-18T12:28:21+00:00</lastmod>
   <priority>0.64</priority>
@@ -365,6 +375,11 @@
 <url>
   <loc>https://cultivatememe.moe/weekly-20200601-swole-doge-vs-cheem.html</loc>
   <lastmod>2020-06-12T06:58:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cultivatememe.moe/weekly-20200714-laughing-wolves-other-spoilers.html</loc>
+  <lastmod>2020-07-14T17:34:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
