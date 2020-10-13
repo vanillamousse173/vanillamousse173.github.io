@@ -329,6 +329,10 @@ a,.tooltiptext a:hover{
 	display:inline-block;
 }
 
+.ad_2{
+	display:none;
+}
+
 .ad_mobile{		
 	position: fixed;
 	background-color: rgba(254, 86, 86,0.5);
