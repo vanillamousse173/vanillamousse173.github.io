@@ -257,7 +257,7 @@ header::after {
 }
 
 footer{
-	bottom: 0;
+	bottom: 40px;
 	width: 100%;
 	margin: 0;
 	padding: 10px 0;
@@ -285,6 +285,10 @@ footer{
 		padding: 0;
 		width: 120px;
 		height: 120px;
+	}
+
+	footer{
+		bottom: 0;
 	}
 }
 
