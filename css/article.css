@@ -320,7 +320,8 @@ a,.tooltiptext a:hover{
 }
 
 /* 廣告 */
-.ad_1{	
+.ad_1_1,
+.ad_1_2 {	
 	background-color: rgba(254, 86, 86,0.5);
 	width: 100%;
 	height: 90px;
@@ -396,7 +397,8 @@ a,.tooltiptext a:hover{
 	}
 
 	/* 廣告 */
-	.ad_1{
+	.ad_1_1,
+	.ad_1_2{
 		background-color: rgba(254, 86, 86,0.5);
 		position: relative;
 		width: 100%;
