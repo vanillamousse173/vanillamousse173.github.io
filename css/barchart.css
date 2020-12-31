@@ -242,9 +242,17 @@ dt {
   width: 29%;
 }
 
+    .percentage-297:after {
+      width: 29.7%;
+    }
+
 .percentage-30:after {
   width: 30%;
 }
+
+    .percentage-309:after {
+      width: 30.9%;
+    }
 
 .percentage-31:after {
   width: 31%;
@@ -253,6 +261,10 @@ dt {
 .percentage-32:after {
   width: 32%;
 }
+
+    .percentage-322:after {
+      width: 32.2%;
+    }
 
     .percentage-323:after {
         width: 32.3%;
@@ -270,6 +282,18 @@ dt {
   width: 35%;
 }
 
+    .percentage-354:after {
+      width: 35.4%;
+    }
+
+    .percentage-356:after {
+      width: 35.6%;
+    }
+
+    .percentage-358:after {
+      width: 35.8%;
+    }
+
 .percentage-36:after {
   width: 36%;
 }
@@ -278,13 +302,29 @@ dt {
         width: 36.6%;
     }
 
+    .percentage-367:after {
+      width: 36.7%;
+    }
+
 .percentage-37:after {
   width: 37%;
 }
 
+    .percentage-373:after {
+      width: 37.3%;
+    }
+
+    .percentage-377:after {
+      width: 37.7%;
+    } 
+
 .percentage-38:after {
   width: 38%;
 }
+
+    .percentage-386:after {
+      width: 38.6%;
+    }
 
 .percentage-39:after {
   width: 39%;
@@ -293,6 +333,18 @@ dt {
 .percentage-40:after {
   width: 40%;
 }
+
+    .percentage-404:after {
+      width: 40.4%;
+    }
+
+    .percentage-407:after {
+      width: 40.7%;
+    }
+
+    .percentage-408:after {
+      width: 40.8%;
+    }
 
 .percentage-41:after {
   width: 41%;
@@ -322,6 +374,10 @@ dt {
   width: 45%;
 }
 
+    .percentage-452:after {
+      width: 45.2%;
+    }
+
     .percentage-453:after {
         width: 45.3%;
     }
@@ -334,6 +390,10 @@ dt {
   width: 47%;
 }
 
+    .percentage-472:after {
+      width: 47.2%;
+    }
+
 .percentage-48:after {
   width: 48%;
 }
@@ -341,6 +401,10 @@ dt {
 .percentage-49:after {
   width: 49%;
 }
+
+    .percentage-492:after {
+      width: 49.2%;
+    }
 
 .percentage-50:after {
   width: 50%;
@@ -362,6 +426,10 @@ dt {
         width: 52.3%;
     }
 
+    .percentage-529:after {
+      width: 52.9%;
+    }
+
 .percentage-53:after {
   width: 53%;
 }
@@ -369,6 +437,10 @@ dt {
 .percentage-54:after {
   width: 54%;
 }
+
+    .percentage-545:after {
+      width: 54.5%;
+    }
 
 .percentage-55:after {
   width: 55%;
@@ -383,8 +455,16 @@ dt {
 }
 
     .percentage-573:after {
-        width: 57.3%;
+      width: 57.3%;
     }
+
+    .percentage-574:after {
+      width: 57.4%;
+    }
+
+    .percentage-578:after {
+      width: 57.8%;
+      }
 
 .percentage-58:after {
   width: 58%;
@@ -418,6 +498,10 @@ dt {
   width: 64%;
 }
 
+    .percentage-645:after {
+      width: 64.5%;
+    }
+
 .percentage-65:after {
   width: 65%;
 }
@@ -441,6 +525,10 @@ dt {
 .percentage-68:after {
   width: 68%;
 }
+
+    .percentage-681:after {
+      width: 68.1%;
+    }
 
 .percentage-69:after {
   width: 69%;
