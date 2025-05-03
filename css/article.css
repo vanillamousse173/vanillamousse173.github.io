@@ -136,7 +136,7 @@ h3>a:hover,h4>a:hover{
 }
 
 .tooltip {
-    position: static;
+	position: static;
     border-bottom: dotted 2px #fe5656;
     cursor: pointer;
     margin: 0;

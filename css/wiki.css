@@ -1,0 +1,137 @@
+@charset "utf-8";
+/*CSS Document */
+.post-wrapper {
+	width:90%;
+	display: flex;
+  	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	margin: 120px auto;
+}
+
+h2{
+	font-size: 20pt;
+	margin: 30px 0 0 10px ;
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+	border-bottom: 2px solid #fe5656;
+}
+
+.meme-content h3{
+	cursor: pointer;
+	border-radius: 8px 8px 0 0;
+	border-bottom: 2px solid #fe5656;
+}
+
+.accordion {
+    font-family: 'Noto Sans TC',"微軟正黑體";
+    border-bottom: 2px solid #fe5656;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+
+    }
+
+
+.accordion:after {
+    content: '\002B';
+    color: #fe5656;
+    font-weight: bold;
+    float: ;
+    margin-left: 5px;
+    }
+  
+.active:after {
+    content: "\2212";
+    }
+  
+.panel{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    }
+
+
+.meme-info {
+	min-width: 200px;
+	max-width: 350px;
+}
+
+.meme-info img{
+	width: 100%;
+	width: 250px;
+}
+
+.imglink {
+	position: relative;
+	display: inline-block;
+  }
+
+.imglink:hover .imgtext {
+	opacity: 0.7;
+	-webkit-transition: 0.5s ease; /*Safari*/
+	transition: 0.5s ease;	
+}
+
+.meme-info table {	
+	width: 100%;
+	border-collapse: collapse;
+	background: #f9f9f9;
+	box-shadow: 2px 2px 8px #141414;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.meme-info th, .meme-info td {
+	font-size: 0.8em;
+	border: 1px solid #ccc;
+	padding: 8px;
+	text-align: center;
+}
+
+#headtitle{
+	border:none;
+	background: #fe5656;
+	color: #fff;
+	font-size: 1em;
+}
+
+
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+
+	.post-wrapper{
+		width:90%;
+		margin-bottom: 150px;
+		flex-direction: row;
+    	align-items: flex-start;
+	}
+	.meme-info {
+		order: 2;
+	}
+
+	.meme-info img{
+		max-width: 300px;
+	}
+	.meme-content {
+		flex: 1;
+		order: 1;
+	  }
+
+
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+	.post-wrapper{
+		width:80%;
+		margin-bottom: 150px;
+		flex-direction: row;
+    	align-items: flex-start;
+	}
+
+}
+
+
