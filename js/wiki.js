@@ -14,11 +14,30 @@ document.addEventListener("DOMContentLoaded", () => {
       // 1. 文章標題
       document.querySelector(".meme-content h2").innerHTML = title;
       document.querySelector("#headtitle").innerHTML = title;
+      
+
+      // === 發佈時間與修訂時間 ===
+      const publishedDate = post.date;
+      const modifiedDate = post.modified;
+      const authorName = post._embedded?.author?.[0]?.name || "";
+
+      function formatDate(dateStr) {
+        return dateStr.slice(0, 10); 
+      }
+
+      const metaHTML = `
+        <div class="meta">
+          <p>發佈：${formatDate(publishedDate)} - ${authorName}</p>
+          <p>修訂：${formatDate(modifiedDate)} - ${authorName}</p>
+        </div>
+      `;
+
+      document.querySelector(".meme-content h2").insertAdjacentHTML("beforeend", metaHTML);
 
       // 2. 精選圖片
       const image = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "";
       const imageSource = acf.image_source || "";
-      const imageSourceText = acf.image_source_text || ""; // 新增的來源顯示文字
+      const imageSourceText = acf.image_source_text || "";
 
       if (image) {
         const imgRow = document.createElement("tr");
@@ -36,9 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".meme-info table").insertBefore(imgRow, document.querySelector(".meme-info table").children[1]);
       }
 
-      // 3. 表格資訊（抓自訂分類法）
+      // 3. 表格資訊
       const infoTable = document.querySelector(".meme-info table");
-
       const type = acf.type?.map((term) => term.name).join("、") || "";
       const year = acf.year || "";
       const origin = acf.origin?.map((term) => term.name).join("、") || "";
@@ -49,15 +67,14 @@ document.addEventListener("DOMContentLoaded", () => {
         <tr><th>類型</th><td>${type}</td></tr>
         <tr><th>年份</th><td>${year}</td></tr>
         <tr><th>起源</th><td>${origin}</td></tr>
-        <tr><th>地區</th><td>${region}</td></tr>        
-        <tr><th>分類</th><td>${category}</td></tr>        
+        <tr><th>地區</th><td>${region}</td></tr>
+        <tr><th>分類</th><td>${category}</td></tr>
       `;
-
 
       // 4. Intro
       document.querySelector(".meme-content").insertAdjacentHTML("beforeend", intro);
 
-      // 5. 段落區塊（heading + content）
+      // 5. 段落區塊（accordion）
       for (let i = 1; i <= 10; i++) {
         const title = acf[`title_${i}`];
         const content = acf[`content_${i}`];
@@ -74,53 +91,110 @@ document.addEventListener("DOMContentLoaded", () => {
           document.querySelector(".meme-content").appendChild(panel);
         }
       }
+
+      // 6. 外部參考資料區塊
+      const referenceList = [];
+      for (let i = 1; i <= 10; i++) {
+        const refTitle = acf[`ref_title_${i}`];
+        const refUrl = acf[`ref_url_${i}`];
+        if (refTitle && refUrl) {
+          referenceList.push(`
+            <li id="ref${i}">
+              <sup><a href="#note${i}">[${i}]</a></sup>
+              <a href="${refUrl}" target="_blank" rel="noopener">${refTitle}</a>
+            </li>`);
+        }
+      }
+
+      if (referenceList.length > 0) {
+        const acc = document.createElement("div");
+        acc.className = "accordion";
+        acc.innerHTML = `<h3>參考資料</h3>`;
+
+        const panel = document.createElement("div");
+        panel.className = "panel";
+        panel.innerHTML = `<ul class="external-references">${referenceList.join("")}</ul>`;
+
+        document.querySelector(".meme-content").appendChild(acc);
+        document.querySelector(".meme-content").appendChild(panel);
+      }
+
       initAccordion();
+      handleHashChange(); // 初次檢查 hash
+
+      // === 處理 hash 變化（包含補償 header 高度與展開區塊）===
+      window.addEventListener("hashchange", handleHashChange);
+
+      function handleHashChange() {
+        const hash = window.location.hash;
+        if (hash.startsWith("#ref") || hash.startsWith("#note")) {
+          const accList = document.querySelectorAll(".accordion");
+          const panelList = document.querySelectorAll(".panel");
+
+          if (hash.startsWith("#ref") && accList.length > 0 && panelList.length > 0) {
+            const lastAcc = accList[accList.length - 1];
+            const lastPanel = panelList[panelList.length - 1];
+
+            lastAcc.classList.add("active");
+            lastPanel.style.maxHeight = lastPanel.scrollHeight + "px";
+            lastPanel.style.overflow = "visible";
+          }
+
+          const target = document.querySelector(hash);
+          if (target) {
+            const yOffset = -105;
+            const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            setTimeout(() => {
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }, 200);
+          }
+        }
+      }
     })
     .catch((err) => {
       console.error("抓取失敗", err);
     });
 
-    function initAccordion() {
-  const acc = document.getElementsByClassName("accordion");
+  // === Accordion 展開功能 ===
+  function initAccordion() {
+    const acc = document.getElementsByClassName("accordion");
 
-  function setPanelState() {
+    function setPanelState() {
+      for (let i = 0; i < acc.length; i++) {
+        const panel = acc[i].nextElementSibling;
+        if (window.innerWidth >= 768) {
+          acc[i].classList.add("active");
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel.style.overflow = "visible";
+        } else {
+          acc[i].classList.remove("active");
+          panel.style.maxHeight = null;
+          panel.style.overflow = "hidden";
+        }
+      }
+    }
+
+    setPanelState();
+
     for (let i = 0; i < acc.length; i++) {
       const panel = acc[i].nextElementSibling;
 
-      if (window.innerWidth >= 768) {
-        acc[i].classList.add("active");
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        panel.style.overflow = "visible";
-      } else {
-        acc[i].classList.remove("active");
-        panel.style.maxHeight = null;
-        panel.style.overflow = "hidden";
-      }
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+          panel.style.overflow = "hidden";
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel.style.overflow = "visible";
+        }
+      });
     }
-  }
 
-  setPanelState();
-
-  for (let i = 0; i < acc.length; i++) {
-    const panel = acc[i].nextElementSibling;
-
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        panel.style.overflow = "hidden";
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        panel.style.overflow = "visible";
-      }
+    let resizeTimer;
+    window.addEventListener("resize", function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(setPanelState, 200);
     });
   }
-
-  let resizeTimer;
-  window.addEventListener("resize", function () {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(setPanelState, 200);
-  });
-}
 });

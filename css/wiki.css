@@ -1,5 +1,7 @@
 @charset "utf-8";
 /*CSS Document */
+
+
 .post-wrapper {
 	width:90%;
 	display: flex;
@@ -10,11 +12,23 @@
 }
 
 h2{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
 	font-size: 20pt;
 	margin: 30px 0 0 10px ;
 	padding-bottom: 10px;
 	letter-spacing: 2px;
 	border-bottom: 2px solid #fe5656;
+}
+
+.meta p{
+	font-size: 0.6rem;
+	color: #666;
+	text-align: right;
+	padding: 0;
+	line-height: 1.5em;
 }
 
 .meme-content h3{
@@ -78,7 +92,7 @@ h2{
 	width: 100%;
 	border-collapse: collapse;
 	background: #f9f9f9;
-	box-shadow: 2px 2px 8px #141414;
+	box-shadow: 2px 2px 8px #bc9b58;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -95,6 +109,25 @@ h2{
 	background: #fe5656;
 	color: #fff;
 	font-size: 1em;
+}
+
+.external-references {	
+	font-size: 0.4em;
+	list-style: none;
+	margin: 1em 0;
+	padding: 10px;
+}
+
+.external-references li {
+	margin-bottom: 0.4em;
+}
+
+.external-references a{
+	color: #056;
+}
+
+.external-references sup a{
+	color: #fe5656;
 }
 
 

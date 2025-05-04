@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+/* 瀑布圖庫：高度不等 */
+.grid-container {
+    column-count: 2;
+    column-gap: 1em;
+  }
+  .grid-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1em;
+    position: relative;
+    cursor: pointer;
+    break-inside: avoid;
+  }
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* 顯示最多4行 */
+    -webkit-box-orient: vertical;
+  }
+
+  .grid-overlay p{
+    font-size: 0.8em;
+    line-height:1.5em;
+    padding: 0;    
+  }
+
+  .grid-item:hover .grid-overlay {
+    opacity: 1;
+  }
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        column-count: 4;
+      }
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+
+    .grid-container {
+        column-count: 6;
+      }
+
+}
