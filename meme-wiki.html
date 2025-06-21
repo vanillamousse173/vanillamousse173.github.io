@@ -19,14 +19,19 @@
      <link rel="shortcut icon" href="img/page.ico">
      <link href="css/article.css" rel="stylesheet" type="text/css">
      <link href="css/wiki.css" rel="stylesheet" type="text/css">
+     <link href="css/grid.css" rel="stylesheet" type="text/css">
      <link href="css/scrollbar.css" rel="stylesheet" type="text/css">
      <link href="css/barchart.css" rel="stylesheet" type="text/css">
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     <script async src="https://www.instagram.com/embed.js"></script>
+     <script async src="https://www.tiktok.com/embed.js"></script>
+     <script async src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v18.0"></script>
      <script type="text/javascript" src="js/nav.js"></script>
      <script type="text/javascript" src="js/article.js"></script>
      <script type="text/javascript" src="js/swiper.js"></script>
      <script type="text/javascript" src="js/wiki.js"></script>
- 
+     
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
  </head>
@@ -61,26 +66,31 @@
          <a href="/"><img src="img/logo.png"/></a>      
      </div>
      <a href="https://www.facebook.com/cultivatememe/" target="_blank">
-         <div class="share"></div>
+         <div class="share" id="fb"></div>
      </a>
+     <a href="https://www.instagram.com/cultivatememe/" target="_blank">
+        <div class="share" id="ig"></div>
+    </a>
    </header>
  <section>
      <div class="content">
          <article class="post-wrapper">
              <aside class="meme-info">
                  <table>
-                 <thead><tr><th id="headtitle" colspan="2"></th></tr></thead>
                  <!-- 圖片與 info 欄位會在這裡插入 -->
                  </table>
              </aside>
              <div class="meme-content">
-                 <h2></h2>
                  <!-- intro 和段落內容都會插入在這裡 -->
              </div>
          </article>
      </div>
  </section>
- 
+
+ <!-- <div class="backtolist">
+    <a href="meme-wiki.html"><img src="img/btn_backtomemes.png" alt="memes"></a>
+</div> -->
+
  <footer></footer>
      
  </body>

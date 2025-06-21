@@ -41,14 +41,30 @@ header::after {
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
+	margin: 0 5px;	
+}
+
+#fb{
 	background: url(../img/fb.png) no-repeat;
 	background-position: -40px,0px;
 	background-size: 200%;
 }
 
-.share:hover{
+#fb:hover{
 	background:url(../img/fb.png) no-repeat;
-	background-position: 0px,0px;
+	background-position: 0px,0px;	
+	background-size: 200%;
+}
+
+#ig{
+	background: url(../img/ig.png) no-repeat;
+	background-position: -40px,0px;
+	background-size: 200%;
+}
+
+#ig:hover{
+	background:url(../img/ig.png) no-repeat;
+	background-position: 0px,0px;	
 	background-size: 200%;
 }
 

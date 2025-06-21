@@ -193,11 +193,11 @@ a,.tooltiptext a:hover{
 }
 
 .backtolist{
-	width: 120px;
+	width: 100px;
 	position: absolute;
 	right: 50%;
 	transform: translateX(50%);
-	bottom: 120px;
+	bottom: 80px;
 	display: inline-block;
 	box-sizing: border-box;
 }

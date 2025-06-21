@@ -1,6 +1,26 @@
 @charset "utf-8";
 /*CSS Document */
+  
+.loading-message, .message-block {
+	font-size: 1.2em;
+	color: #056;	
+	margin-top: 160px;
+	text-align: center;
+}
 
+.loading-message{
+	animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+70% {
+	opacity: 0.3;
+}
+}
+
+.message-block article{
+	width: 90%;
+}
 
 .post-wrapper {
 	width:90%;
@@ -66,8 +86,39 @@ h2{
     transition: max-height 0.2s ease-out;
     }
 
+.panel iframe,
+.panel embed,
+.panel blockquote,
+.panel .wp-block-embed,
+.panel .ast-oembed-container,
+.panel .twitter-tweet,
+.panel .instagram-media {
+	display: inline-block;
+	margin: 10px;
+	max-width: 95%;	
+	background-color: #f9f9f9;
+}
 
-.meme-info {
+.meme-content .panel img {
+	width: 100%;
+	margin: 10px;
+}
+
+a:has(img) {
+	display: inline-block;
+	border: none;
+	max-width: 350px;
+	max-height: 500px;
+	overflow: hidden;
+  }
+
+  a:has(img):hover {
+	border: none;
+  }
+
+
+
+.meme-info table{
 	min-width: 200px;
 	max-width: 350px;
 }
@@ -112,10 +163,13 @@ h2{
 }
 
 .external-references {	
-	font-size: 0.4em;
+	font-size: 0.8em;
 	list-style: none;
-	margin: 1em 0;
 	padding: 10px;
+}
+
+ul {
+	margin: 0;
 }
 
 .external-references li {
@@ -130,10 +184,63 @@ h2{
 	color: #fe5656;
 }
 
+#form {
+	text-align: center;
+	display: block;
+	border-radius:10px; 
+	width: 80%;
+	margin: 20px auto 0;
+}
 
+p.report-link {
+	font-size: 0.6em;
+	text-align: right;
+	padding: 0;
+}
+
+#report-modal {
+	display: none;
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 9999;
+}
+#report-modal.show {
+	display: block;
+}
+.modal-overlay {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+}
+.modal-content {
+	background: white;
+	width: 90%;
+	max-width: 600px;
+	margin: 5vh auto;
+	padding: 1.2em;
+	border-radius: 10px;
+	position: relative;
+	z-index: 10000;
+}
+.modal-close {
+	position: absolute;
+	top: 0; 
+	right: 0;
+	color: #fe5656;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 35px;
+}
+  
+  
 
 /*for tablets*/
 @media only screen and (min-width: 768px) {
+	
+	.message-block article{
+		width: 80%;
+	}
 
 	.post-wrapper{
 		width:90%;
@@ -163,6 +270,10 @@ h2{
 		margin-bottom: 150px;
 		flex-direction: row;
     	align-items: flex-start;
+	}
+
+	.external-references {	
+		font-size: 0.6em;
 	}
 
 }

@@ -97,33 +97,7 @@ $('.tip').hover(function(){
 	
 });		
 
-
-// 瀑布流圖庫
-$.ajax({
-	url: "https://bxf.fwt.mybluehost.me/wp-json/wp/v2/memewiki?per_page=12&_embed",
-	method: "GET",
-	success: function (data) {
-	  let html = "";
-	  data.forEach(function (post) {
-		const img = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "https://via.placeholder.com/300x200?text=No+Image";
-		let intro = post.acf?.intro || "";
-			intro = intro.length > 35 ? intro.substring(0, 35) + "…" : intro;
-		const slug = post.slug;
-  
-		html += `
-		  <div class="grid-item" onclick="window.open('https://cultivatememe.moe/meme-wiki.html?slug=${slug}', '_blank')">
-			<img src="${img}" alt="${post.title.rendered}">
-			<div class="grid-overlay">${intro}</div>
-		  </div>
-		`;
-	  });
-	  $("#meme-grid").html(html);
-	},
-	error: function (xhr, status, error) {
-	  console.error("memewiki 圖庫載入失敗：", status, error);
-	  $("#meme-grid").html("<p>⚠️ 無法載入圖庫</p>");
-	}
-  });
+loadRecentMemes("#meme-grid", 0, 15);
 
 
 });

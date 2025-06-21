@@ -1,22 +1,37 @@
 @charset "utf-8";
 /* CSS Document */
-/* 瀑布圖庫：高度不等 */
 .grid-container {
     column-count: 2;
     column-gap: 1em;
+    margin: 10px auto;
   }
   .grid-item {
-    display: inline-block;
+    display: inline-block;       
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     position: relative;
     cursor: pointer;
     break-inside: avoid;
+  }
+  .grid-item:hover {  
+    box-shadow: 2px 2px 8px #141414;
+    border-radius: 10px;
+    -ms-transform: scale(1.05,1.05);	/* IE 9*/
+    -webkit-transform: scale(1.05,1.05);	/*Safari*/
+    transform: scale(1.05,1.05);	/*Standard syntax*/
+
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;/*Safari*/
+  
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
+  
   }
   .grid-item img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 10px;
   }
   .grid-overlay {
     position: absolute;
@@ -26,9 +41,10 @@
     height: 100%;
     background: rgba(0,0,0,0.6);
     color: white;
-    padding: 10px;
+    padding: 5px;
     opacity: 0;
     transition: 0.3s;
+    border-radius: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -37,8 +53,8 @@
   }
 
   .grid-overlay p{
-    font-size: 0.8em;
-    line-height:1.5em;
+    line-height:1.4em;
+    letter-spacing: normal;
     padding: 0;    
   }
 
@@ -49,15 +65,22 @@
 /*for tablets*/
 @media only screen and (min-width: 768px) {
     .grid-container {
-        column-count: 4;
+        column-count: 3;
       }
+
+    .grid-overlay {
+      padding: 10px;
+    }
+
+    .grid-overlay p{
+      line-height:1.5em;
+    }
 }
 
 /*for desktop*/
 @media only screen and (min-width: 1200px) {
-
-    .grid-container {
-        column-count: 6;
-      }
+  .grid-container {
+    column-count: 5;
+  }
 
 }
