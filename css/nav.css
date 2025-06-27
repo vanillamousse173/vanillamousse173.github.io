@@ -11,7 +11,7 @@ header {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 40px;
+    padding: 0 20px;
 	background-color: #fe5656;
 	transition: top 0.5s;
 }
@@ -29,7 +29,7 @@ header::after {
 
 #logo{
 	max-width: 200px;
-	min-width: 70px;
+	min-width: 50px;
 	margin: 10px auto 0;
 }
 
@@ -287,7 +287,10 @@ footer{
 
 /*for tablets*/
 @media only screen and (min-width: 768px) {
-		
+	header{
+		padding: 0 40px;
+	}
+	
 	.hamburger {
 		margin-left: 20px;
 	}

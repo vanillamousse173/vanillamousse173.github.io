@@ -86,7 +86,7 @@ h2{
     transition: max-height 0.2s ease-out;
     }
 
-.panel iframe,
+.panel iframe:not([src*="youtube"]),
 .panel embed,
 .panel blockquote,
 .panel .wp-block-embed,
@@ -97,6 +97,25 @@ h2{
 	margin: 10px;
 	max-width: 95%;	
 	background-color: #f9f9f9;
+}
+
+.panel .wp-block-embed-youtube iframe,
+.panel iframe[src*="youtube"],
+.panel iframe[src*="youtu.be"] {
+	aspect-ratio: 16 / 9;
+	height: auto;
+}
+
+.panel .ast-oembed-container{
+	background-color: transparent;
+}
+
+.panel iframe[src*="tiktok.com"] {
+	width: 100%;
+	max-width: 400px;
+	min-height: 500px;
+	display: block;
+	margin: 1em auto;
 }
 
 .meme-content .panel img {
@@ -116,7 +135,9 @@ a:has(img) {
 	border: none;
   }
 
-
+sup{
+	line-height: 0;
+}
 
 .meme-info table{
 	min-width: 200px;
@@ -178,6 +199,10 @@ ul {
 
 .external-references a{
 	color: #056;
+}
+
+.external-references a:hover{
+	color: #fe5656;
 }
 
 .external-references sup a{

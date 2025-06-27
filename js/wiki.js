@@ -26,11 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((res) => res.json())
     .then((data) => {
       if (!data || data.length === 0) {
+        loadingDiv.remove();
         showErrorMessageWithLink("此迷因不存在 ε＝ε＝┌(;ﾟдﾟ)┘<br>▼瀏覽其他已登錄迷因▼");
         return;
       }
-    
-      loadingDiv.remove();
       
       const post = data[0];
       const acf = post.acf || {};
@@ -283,47 +282,78 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // === Accordion 展開功能 ===
+  // function initAccordion() {
+  //   const acc = document.getElementsByClassName("accordion");
+
+  //   function setPanelState() {
+  //     for (let i = 0; i < acc.length; i++) {
+  //       const panel = acc[i].nextElementSibling;
+  //       if (window.innerWidth >= 768) {
+  //         acc[i].classList.add("active");
+  //         panel.style.maxHeight = panel.scrollHeight + "px";
+  //         panel.style.overflow = "visible";
+  //       } else {
+  //         acc[i].classList.remove("active");
+  //         panel.style.maxHeight = null;
+  //         panel.style.overflow = "hidden";
+  //       }
+  //     }
+  //   }
+
+  //   setPanelState();
+
+  //   for (let i = 0; i < acc.length; i++) {
+  //     const panel = acc[i].nextElementSibling;
+
+  //     acc[i].addEventListener("click", function () {
+  //       this.classList.toggle("active");
+  //       if (panel.style.maxHeight) {
+  //         panel.style.maxHeight = null;
+  //         panel.style.overflow = "hidden";
+  //       } else {
+  //         panel.style.maxHeight = panel.scrollHeight + "px";
+  //         panel.style.overflow = "visible";
+  //       }
+  //     });
+  //   }
+
+  //   let resizeTimer;
+  //   window.addEventListener("resize", function () {
+  //     clearTimeout(resizeTimer);
+  //     resizeTimer = setTimeout(setPanelState, 200);
+  //   });
+  // }
   function initAccordion() {
-    const acc = document.getElementsByClassName("accordion");
+  const acc = document.getElementsByClassName("accordion");
 
-    function setPanelState() {
-      for (let i = 0; i < acc.length; i++) {
-        const panel = acc[i].nextElementSibling;
-        if (window.innerWidth >= 768) {
-          acc[i].classList.add("active");
-          panel.style.maxHeight = panel.scrollHeight + "px";
-          panel.style.overflow = "visible";
-        } else {
-          acc[i].classList.remove("active");
-          panel.style.maxHeight = null;
-          panel.style.overflow = "hidden";
-        }
+  for (let i = 0; i < acc.length; i++) {
+    const panel = acc[i].nextElementSibling;
+
+    // 依螢幕寬度一次性設置展開或收合狀態
+    if (window.innerWidth >= 768) {
+      acc[i].classList.add("active");
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.overflow = "visible";
+    } else {
+      acc[i].classList.remove("active");
+      panel.style.maxHeight = null;
+      panel.style.overflow = "hidden";
+    }
+
+    // 點擊切換
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        panel.style.overflow = "hidden";
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.overflow = "visible";
       }
-    }
-
-    setPanelState();
-
-    for (let i = 0; i < acc.length; i++) {
-      const panel = acc[i].nextElementSibling;
-
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-          panel.style.overflow = "hidden";
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-          panel.style.overflow = "visible";
-        }
-      });
-    }
-
-    let resizeTimer;
-    window.addEventListener("resize", function () {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(setPanelState, 200);
     });
   }
+
+}
   
 });
 

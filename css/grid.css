@@ -47,9 +47,9 @@
     border-radius: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* 顯示最多4行 */
-    -webkit-box-orient: vertical;
+    /* display: -webkit-box;
+    -webkit-line-clamp: 5; /* 顯示最多4行
+    -webkit-box-orient: vertical; */
   }
 
   .grid-overlay p{
@@ -60,6 +60,13 @@
 
   .grid-item:hover .grid-overlay {
     opacity: 1;
+  }
+
+  .grid-title{
+    text-align: center;
+    font-size: 16pt;
+    line-height:1em;
+    font-weight: 600;
   }
 
 /*for tablets*/
@@ -75,6 +82,10 @@
     .grid-overlay p{
       line-height:1.5em;
     }
+
+    .grid-title{
+    line-height:1em;
+  }
 }
 
 /*for desktop*/
