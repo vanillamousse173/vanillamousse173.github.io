@@ -25,11 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(`https://bxf.fwt.mybluehost.me/wp-json/wp/v2/memewiki?slug=${slug}&_embed`)
     .then((res) => res.json())
     .then((data) => {
-      if (!data || data.length === 0) {
-        loadingDiv.remove();
+      if (!data || data.length === 0) {        
         showErrorMessageWithLink("此迷因不存在 ε＝ε＝┌(;ﾟдﾟ)┘<br>▼瀏覽其他已登錄迷因▼");
         return;
       }
+
+      loadingDiv.remove();
       
       const post = data[0];
       const acf = post.acf || {};

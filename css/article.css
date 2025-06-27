@@ -76,7 +76,7 @@ article{
 	width: 100%;
 }
 
-p{
+p,li{
 	font-size: 12pt;
 	padding: 7pt 10px ;
 	margin: 0;
@@ -85,6 +85,10 @@ p{
 	text-align: justify;
 	font-weight: 400;
 	position: relative;
+}
+
+li{
+	line-height: 12pt;
 }
 
 .centerline{
@@ -117,7 +121,7 @@ h4>img{
 	width: 120px;
 }
 
-p>a{
+p>a,li>a{
 	border-bottom: dotted 2px #fe5656;
 	color: #000;
 }
@@ -126,7 +130,7 @@ h3>a,h4>a{
 	color:  #fff;
 }
 
-p>a:hover{
+p>a:hover,li>a:hover{
 	border-bottom: dotted 2px #fe5656;
 	color:  #fe5656;
 }

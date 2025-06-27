@@ -99,13 +99,6 @@ h2{
 	background-color: #f9f9f9;
 }
 
-.panel .wp-block-embed-youtube iframe,
-.panel iframe[src*="youtube"],
-.panel iframe[src*="youtu.be"] {
-	aspect-ratio: 16 / 9;
-	height: auto;
-}
-
 .panel .ast-oembed-container{
 	background-color: transparent;
 }
