@@ -15,7 +15,7 @@ function loadRecentMemes(targetSelector = "#meme-grid", offset = 0, limit = 15, 
         const slug = post.slug;
 
         html += `
-          <div class="grid-item" onclick="window.open('https://cultivatememe.moe/meme-wiki.html?slug=${slug}', '_blank')">
+          <div class="grid-item" onclick="window.open('https://cultivatememe.moe/meme-wiki.html?${slug}', '_blank')">
             <img src="${img}" alt="${post.title.rendered}">
             <div class="grid-overlay"><p class="grid-title">${post.title.rendered}</p>${intro}</div>
           </div>
