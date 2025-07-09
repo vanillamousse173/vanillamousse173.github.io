@@ -86,19 +86,48 @@ h2{
     transition: max-height 0.2s ease-out;
     }
 
-.panel iframe:not([src*="youtube"]),
+.panel iframe,
 .panel embed,
 .panel blockquote,
 .panel .wp-block-embed,
 .panel .ast-oembed-container,
 .panel .twitter-tweet,
 .panel .instagram-media {
+  display: block;
+  margin: 0.5em auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.panel iframe[src*="youtube"],
+.panel iframe[src*="tiktok.com"],
+.panel iframe[src*="facebook.com"] {
+  width: 100% !important;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  height: auto !important;
+  display: block;
+  border: none;
+  margin: 0.5em auto;
+}
+
+.panel .twitter-tweet,
+.panel .instagram-media {
+  padding: 0;
+  border: none;
+}
+
+
+
+/* .panel iframe:not([src*="youtube"]),
+.panel embed,
+.panel .wp-block-embed,
+.panel .ast-oembed-container{
 	display: inline-block;
 	margin: 10px ;	
 	position: relative;
-	width: 95%;
+	width: 95%;	
 	max-width: 500px;
-	padding-bottom: 53.4375%; /* 16:9 高寬比 */
 	height: 0;
 	overflow: hidden;
 	background-color: #f9f9f9;
@@ -109,12 +138,13 @@ h2{
 }
 
 .panel iframe[src*="youtube"] {
-	position: absolute;
+	position: absolute;	
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	border: 0;
+	
 }
 
 .panel iframe[src*="tiktok.com"] {
@@ -124,6 +154,18 @@ h2{
 	display: block;
 	margin: 1em auto;
 }
+
+.panel .twitter-tweet,
+.panel .instagram-media {
+  display: block;
+  max-width: 100%;
+  margin: 1em auto;
+  background-color: #f9f9f9;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+} */
+
 
 .meme-content .panel img {
 	width: 100%;
