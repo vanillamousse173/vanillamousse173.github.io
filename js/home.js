@@ -97,7 +97,7 @@ $('.tip').hover(function(){
 	
 });		
 
-loadRecentMemes("#meme-grid", 0, 15);
+loadRecentMemes("#meme-grid", 0, 10);
 
 
 });

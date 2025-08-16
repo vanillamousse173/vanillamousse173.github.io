@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*CSS Document */
-  
+
 .loading-message, .message-block {
 	font-size: 1.2em;
 	color: #056;	
@@ -94,7 +94,7 @@ h2{
 .panel .twitter-tweet,
 .panel .instagram-media {
   display: block;
-  margin: 0.5em auto;
+  margin: 0.5em auto !important;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -169,15 +169,15 @@ h2{
 
 .meme-content .panel img {
 	width: 100%;
-	margin: 10px;
 }
 
 a:has(img) {
-	display: inline-block;
-	border: none;
+	border: none;		
+	display: block;
 	max-width: 350px;
 	max-height: 500px;
-	overflow: hidden;
+	line-height: 0;
+	margin-bottom: 10px;
   }
 
   a:has(img):hover {
@@ -230,6 +230,36 @@ sup{
 	background: #fe5656;
 	color: #fff;
 	font-size: 1em;
+}
+
+.sponsor{
+	width: 100%;
+	margin-top: 15px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.sponsor img{
+	width: 100%;
+}
+
+.box{
+	-ms-transform:scale(1,1);	/* IE 9*/
+	-webkit-transform: scale(1,1);	/*Safari*/
+	transform: scale(1,1);	/*Standard syntax*/
+	
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;/*Safari*/
+
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);/*Safari*/
+}
+
+.box:hover{
+	box-shadow: 2px 2px 8px #bc9b58;
+	-ms-transform: scale(1.05,1.05);	/* IE 9*/
+	-webkit-transform: scale(1.05,1.05);	/*Safari*/
+	transform: scale(1.05,1.05);	/*Standard syntax*/
 }
 
 .external-references {		
@@ -308,6 +338,8 @@ p.report-link {
 	cursor: pointer;
 	font-size: 35px;
 }
+
+
   
   
 
