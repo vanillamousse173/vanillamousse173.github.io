@@ -197,6 +197,7 @@ a,.tooltiptext a:hover{
 }
 
 .backtolist{
+	cursor: pointer;
 	width: 100px;
 	position: absolute;
 	right: 50%;

@@ -339,8 +339,9 @@ p.report-link {
 	font-size: 35px;
 }
 
-
-  
+.message-block-b{
+	margin: 0;
+} 
   
 
 /*for tablets*/

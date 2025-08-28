@@ -373,7 +373,7 @@ function showErrorMessageWithLink(message) {
     ${message}
     <article>
     <div id="meme-grid" class="grid-container"></div>
-    </article>
+    </article>    
             `;
     memeContent.appendChild(tip);
 
@@ -382,12 +382,29 @@ function showErrorMessageWithLink(message) {
     gridContainer.id = "meme-grid";
     gridContainer.className = "grid-container";
     memeContent.appendChild(gridContainer);
+    const loadMoreBtn = document.createElement("div");
+    loadMoreBtn.id = "load-more-memes";
+    loadMoreBtn.className = "backtolist";
+    loadMoreBtn.innerHTML = `
+      <img src="img/btn_seemore.png" alt="seemore">
+    `;
+    memeContent.appendChild(loadMoreBtn);
 
     // 動態載入 grid.js
     const script = document.createElement("script");
-    script.src = "js/grid.js"; 
+    script.src = "js/grid.js";
     script.onload = () => {
-      loadRecentMemes("#meme-grid");
+      let offset = 0;
+      const limit = 10;
+
+      // 第一次載入
+      loadRecentMemes("#meme-grid", offset, limit, false);
+
+      // 綁定按鈕
+      loadMoreBtn.addEventListener("click", () => {
+        offset += limit;
+        loadRecentMemes("#meme-grid", offset, limit, true);
+      });
     };
     document.body.appendChild(script);
 }
