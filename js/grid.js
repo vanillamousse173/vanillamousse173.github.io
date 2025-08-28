@@ -33,10 +33,15 @@ function loadRecentMemes(targetSelector = "#meme-grid", offset = 0, limit = 10, 
         const loadMoreBtn = document.getElementById("load-more-memes");
         if (loadMoreBtn) {
           loadMoreBtn.style.display = "none";
-          // 顯示底訊息
+          // 顯示底部訊息
           const endMessage = document.createElement("div");
-          endMessage.textContent = "你已經滑到迷因池底部惹！";
           endMessage.className = "message-block-b";
+          endMessage.innerHTML = `
+          你已經滑到迷因池底部惹！<br>來贊助我們記錄更多迷因- ̗̀ ‪꒰ঌ(^o^)໒꒱  ̖́-
+            <a href="https://p.ecpay.com.tw/DC72BCF" target="_blank" title="贊助培養meme">                    <div class="sponsor box">                    
+                    <img src="img/support.jpg" alt="sponsor">
+                </div>
+            </a>`;
           target.insertAdjacentElement("afterend", endMessage);
         }
       }
